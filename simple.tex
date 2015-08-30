@@ -18,8 +18,130 @@
 This is the paper's abstract \ldots
 \end{abstract}
 
-\section{Introduction}
-This is time for all good men to come to the aid of their party!
+\chapter{Part 1:}
+
+
+\chapter{Part 2: The impact of AI on the entrepreneurial ecosystem}
+
+Now that we've seen the improvements of AI technology, we're going to look at the impact those technologies can have on the entrepreneurial ecosystem. Our approach will be the following: we'll explore a few applications of AI technologies, and propose startup ideas related to this. 
+Of course, some companies, including startups, are already leveraging the latest progress in AI to offer a commercial service, or are expected to do so. We'll therefore start by reviewing the first AI commercial progress in the space. Then, we'll look at other area to expend our analysis
+
+\section{Impact on startup ideas}
+
+\subsection{Self-driving cars}
+
+\subsubsection{A bit of context}
+
+The first autonomous cars appeared back in the 1980's with the Canergie Mellon Unviversity Navlab project in 1984, and a similar project by Mercedes Benz in 1987. Those project were were considered pure exploration at the time. But things have changed. In 2005, DARPA launch a Grand Challenge which was won by a team of engineers at Stanford, who created a first self-driving car prototype. Since then, the team has been hired by Google to create the first autonomous that has started hitting the road of California in the spring 2015. 
+A few others are following this way: Uber, Tesla and potentially Apple to name a few.
+
+\subsubsection{Technology behind those cars}
+
+Let's look at the technology behind those. 
+
+First, autonomous car include a ton of sensors to gather data about their environment. Let's look into those. 
+
+The position of the car is determined with a classic GPS, to which are added tachometers, altimeters and gyroscopes to enrich the only GPS data. 
+Then come radar sensors that are located all around the car to localize potential obstacles. Usually, there are 4 of those: 3 at the front and 1 at the back of the car. On the sides of the car, there are ultra sonic sensors which are a bit different, they're used to locate objects close to the car. Think about parking for instance. 
+On top of this, a video camera points to the front. It aims to detect traffic lights and road signs. 
+The central element among all those sensors is the LIDAR: Light detection and ranging. This element is located at the top of the car. It identifies the edges of the road, and provides a 360° projection of the environment around the car. 
+
+http://students.cec.wustl.edu/~daniel.gordon/Tech_Writing/GoogleCarDiagram.jpg 
+
+Second, the car includes a powerful computer to analyze all these parameters and actually "drive" the car. Let's take the example of Google's software called "Chauffeur". It's composed of two parts. One is hardcoded (road signs, traffic lights colors), and one is a learning part. Every mile is logged and provides additionnal data on how the car should drive itself. 
+Therefor, the car is able to predict the behavior of surrounding elements (both car, bikes, pedestrians). Such things are based on neural networks behing fed with the driving data of million of other cars that Google has been collecting. This video by Google provides a great example of how the car perceives its environment and can make decisions. 
+
+http://i.telegraph.co.uk/multimedia/archive/03183/google1_3183549c.jpg
+
+https://www.youtube.com/watch?v=dk3oc1Hr62g
+
+
+\subsubsection{Car industry discruption}
+
+The disruption is happening at several levels: some startups are building addons to current cars, so they can get self-driving functionnalities. For instance, a Californian company called Cruise (http://www.getcruise.com/) enhances a car's capabilities by seamlessly integrating self-driving car capabilities to your existing car. It works by adding sensors and a computer to the car, and works in a similar fashion as the Google car. The idea is that you can add those features to your car for about $15,000 depending on the vehicle you have. 
+Google has a similar approach: according to several journalistic sources, they intend to resell their self-driving technologies to automotive companies. Though, many people fear that Google will have a significant bargaining advantage, as those car companies don't have the technology yet. 
+
+Some other companies intend to replace current car makers. Tesla is the best example in the category. Though the company CEO, Elon Musk, is confident self-driving cars will hit the market by 2020, there were no public statement about Tesla building such cars. In a recent video, he was asked whether Tesla would be willing to provide Uber with self-driving cars, and declined to answer. Many reporters concluded that Tesla will likely be the first company to sell autonomous cars, that were built in-house. Similar to Tesla, there could be new car giants rising by leverging the opportunity to build both a new type of car and a powerful self-driving technology. 
+
+Finally, the most ambitious model is probably the one by Uber. The idea behind it is that using UberX costs about $2.15 per mile (source: AKA research). Owning a personal car is $0.76. Uber wants to create Car-As-a-Service. The idea is similar to what Uber is today, but without the drivers. Think about it for a moment. The car driver accounts for most of the cost of an UberX ride. Therefore, if you can remove the driver, the cost would be $0.25 per mile. It's not only about replacing the driver, it's about making the car available for customers at any time, on any day. Whereas a driver takes some rest and parks their car, a self-driving car could be on the road almost 24/7.  
+
+http://static3.businessinsider.com/image/55dfd176bd86ef19008b67fe-700-465/vehicle-cost.png
+
+No matter who's leading that change, it's likely that our own definition of the car is going to change. Mercedes has shown an example of a car being similar to a living room: the Mercedes-Benz F 015. Travellers could sleep, chat, browse the internet as if they were at home. The car has been driving around San Francisco this year. 
+
+https://www.mercedes-benz.com/wp-content/uploads/sites/3/2015/01/05-Mercedes-Benz-F-015-Luxury-in-Motion-680x436.jpg 
+
+Another big change would be the oil station network. Since the car could drive themselves to refill, or could be fully electricity powered, it will most likely be the end of oil stations as we know them. Those will be probably automated as well, and moved to non-residential areas. 
+
+
+
+\subsection{Speech & natural-language recognition, or the death of interfaces}
+
+The speech recognition movement has been initiated to the large public with a startup bought by Apple, Siri. This startup was initiated a DARPA project as well named CALO. Essentially, it works by transcripting speech to text, and then parses the text to perform actions. Google has launched a similar service called Google now. Both these system can perform actions based on the user's speech. 
+This technology enables the user to perform actions on the service of his choosing (OpenTable, Yelp), without having to use any interface. The speech is the communication tool.
+
+\subsubsection{Technology behind it }
+Personal assistant technologies rely on three parts. 
+The first one is about extracting the meaning of the speech to figure out which action to perform. In that case, Siri uses for instance part of speech tagging, noun-phrase chunking, dependency & constituent parsing. 
+On the other side, such service should plug into third party services. The complexity lies in the ability to connect with very various systems (AirBnb, HotelTonight, Couchsurfing, Bookking.com only to make a hotel reservation). 
+Once this has been done, Siri needs to communicate back with the user, converting API responses to oral & human communication. 
+
+\subsubsection{Use cases}
+Plenty of services have followed the Siri path, usually in a more advanced fashion. It's interesting to note that some services are built with technology at its core (Siri & Google Now), whereas others are human-based at first. The Y Combinator startup called "Magic" is the exact opposite. The service only includes the written language recognition. For instance, a user can text Magic asking for anything they'd like, and then the service will connect to thirt party services (in a similar fashion than Siri) to provide the service live. The complexity therefore lies on relying on a very large number of 3rd party services to provide a very large offering to the user. When a regular supermarket has a limited inventory, Magic, as a personal assistant, needs to be able to deliver anything the user wants. The second part of the complexity is scaling. When you have human handling each operation at the beginning, you need to progressively create processes to better handle certain tasks, and eventually automate entire parts of the workflow. 
+
+Combining AI and diversity of requests doesn't seem to be possible today. Such startups are having trouble to scale. The current solution is to combine a mix of the two. Facebook Messenger recently launched a service called M that illustrates it: they've leveraged the purchase of the French startup Wit.ai and a team of personal assistants that handle manually some request to provide this personal assistant service. 
+
+This market is likely a winner takes all one. Since these personal assistant platforms are about connecting people with services, their model is similar to Google's search engine. If you are the entry point for the customer, it's very hard for competitors to make the users switch. Startups like Magic benefited from their speed of execution, but the ability to scale requires to leverage AI technology. It's not clear today whether startups or giants will succeed in that field. Though it's interesting to see that the 2 take 2 opposite approach to later converge in the same area. 
+
+Additional services from startup in that space intend to focus on one vertical only. A good example of it are personal assistant focused on organizing meetings between to person who want to schedule an appointment. To name a few, players in that space are x.ai, assistant.ai or juliedesk. These companies are managing to live up to their promise, but the complexity once again lies in the ability to scale. They are strongly investing in AI to replace human services that they first relied on. 
+
+Finally, we could imagine two models for that space. 
+One would be a model built by a major tech company (among Facebook, Google or Apple) that would provide any kind of service by levering a strong AI technology, and would plug into a very large number of APIs from company that provide food delivery, order delivery, or pretty much anything. 
+The second model would be a platform one. A company like Magic could be the entry point for the user. Then, if a calendar request is made to Magic, it would just have to tag it as so and to route it to a Calendar booking service such as x.ai. 
+
+The former seems more likely as concentrating the efforts in Machine Learning is probably the best approach to achieve the best results, though the two are possible.   
+
+\subsubsection{Death of interfaces}
+
+The main benefit of such services for the user is that it's a very easy way to communicate with a machine, in order to get a service. Think about it the User-Experience behind it. 
+If you use a speech recognition, you would just have to say: 'Book me a table for 2 in a historic area of Paris, where I can eat italian food.'. That will do the trick. 
+If the user was to do it on their laptop or on their phone, they'll need to #1 find the right service to search on (TripAdivisor, OpenTable, Yelp?). Then perform the search. Then make a choice, and go through the reservation process. 
+The former is way faster. Another benefit is in what we would call "unique" cases. Say you want to book a laser-tag party in Paris, and you've never done it before. You don't know where to look, so you're going to spend time figuring out how to book a good laser-tag game. You'll probably need to benchmark a few, look at the review, etc. 
+
+A strong case in favor of speech-based application is that you don't need to learn about the existence of the service, and you don't need to use any interface. UX designers often struggle to make an app available to all. No interface is probably the most efficient. Even a 80 year-old who has never used an app in their life would be able to use it. 
+We can then imagine that, instead of having dozens of apps on our phone or dozens of websites pinned on our browsers, a single personal assistant app could do the job. Just like Google does for search today. This user experience part make those personal assistant particularly appealing in the long-run, because the friction to start using them is very low. 
+A good example of it we saw is about forwarding professional expenses to the company's accountant. The mainstream service for it today is Expensify. You just need to install an app on your phone (meaning, if you have 1000 people in the company, they all need to install it), then you can take a picture of a receipt and it will automatically be sent to the company's accoutant. This all process would be easier with a speech or written language recognition app. You could just send over the receipt's picture via text to the company AI bot. It will recognize what it is, potentially ask a few question about the expense and done. 
+
+Time will tell, but usually the service that provides the simplest user experience wins. And it's likely that the personal assistant user experience is the simplest. 
+
+
+\subsection{Image recognition}
+
+\section{Impact on startup structures}
+
+\subsection{New kinds of business models}
+
+\subsection{The path to the 100 per cent software company}
+
+\chapter{Part 3: Limits}
+
+
+
+
+
+# Sources
+
+\section{Car}
+
+http://www.google.com/selfdrivingcar/
+http://www.businessinsider.com/why-uber-is-investing-in-autonomous-cars-2015-8?IR=T
+http://www.entrepreneur.com/article/243751
+http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/
+http://my.teslamotors.com/fr_CH/forum/forums/tesla%E2%80%99s-musk-sees-fully-autonomous-car-ready-5-years
+
+\section{Speech recognition}
+
+
 
 \paragraph{Outline}
 The remainder of this article is organized as follows.
