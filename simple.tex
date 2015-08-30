@@ -1,22 +1,50 @@
+\documentclass[11pt]{article}
+
 \title{A Very Simple \LaTeXe{} Template}
 \author{
         Henry Huck \\
-                Master Specialisé - HEC\\
-            \and
+        Master Specialis\ - HEC \\
+        \and
         Romain Lapeyre\\
         Grande Ecole - HEC\\
-
 }
 \date{\today}
 
-\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\maketitle
 
-\begin{abstract}
-This is the paper's abstract \ldots
-\end{abstract}
+\maketitle
+\thispagestyle{empty}
+\pagenumbering{gobble}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Quote Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\phantom{TEXT}
+\thispagestyle{empty}
+\pagenumbering{arabic}
+
+\vspace{200pt}
+\begin{quotation}
+\noindent \textbf{Human:}  \textit{\lq What is the purpose of emotions ?\rq }\\
+\textbf{Machine:} \textit{\lq I don't know\rq}
+\end{quotation}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+\pagebreak
 
 \section{Introduction}
 This is time for all good men to come to the aid of their party!
