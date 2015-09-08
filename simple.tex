@@ -3,6 +3,8 @@
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[xindy, acronym ,toc]{glossaries}
+
 \graphicspath{ {images/} }
 
 \title{Artifical Intelligence}
@@ -10,10 +12,12 @@
         Henry Huck \\
         Master Specialisé - HEC \\
         \and
-        Romain Lapeyre\\
+        Romain Lapeyre\\to
         Grande Ecole - HEC\\
 }
 \date{\today}
+\makeglossaries
+\makeindex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,11 +41,13 @@
 
 \vspace{200pt}
 \begin{quotation}
-\noindent \paragraph{Human:}  \textit{\lq What is the purpose of emotions ?\rq }\\
-\paragraph{Machine:} \textit{\lq I don't know.\rq}
+\noindent \textbf{Human:}  \textit{\lq What is the purpose of emotions ?\rq }
+\\
+
+\noindent \textbf{Machine:} \textit{\lq I don't know.\rq}
 \end{quotation}
 
-\vspace{270pt}
+\vspace{200pt}
 
 \begin{flushright}
    From Google's research paper \lq A Neural Conversation Model\rq. \cite{seq2seq}
@@ -76,8 +82,35 @@
 \addcontentsline{toc}{section}{Introduction}
 
 %Introduction about super intelligence and the theories relative to it
-Super intelligence and singularity \cite{Kurzweil}
 
+\lq Can machines think? \rq This is the question Alan Turing raised in his paper
+{\em The Imitation Game} \cite{Turing}. In order to answser this question,
+Turing designed a test, a Game, that a {\em thinking} machine would be able to
+pass. Very simply, a machine would pass this test, if a human Interrogator who
+would pass written questions in two different rooms, would not be able to tell
+in which room the machine is by examining its answers.
+
+\newacronym{NLPLabel}{NLP}{Natural Language Processing}
+
+\newglossaryentry{computer}
+{
+  name=computer,
+  description={is a programmable machine that receives input,
+               stores and manipulates data, and provides
+               output in a useful format}
+}
+
+\gls{computer}
+
+An AI simulating a 13 years old Ukrainian boy is said to have pass this famous
+test. {\footnote \href{http://www.bbc.com/news/technology-27762088}
+{BBC - Eugene Goostman}} However, this result was highly controversial due to
+the setting of the test (short Q\&A sessions), and the deceptive strategy adopted
+in order to pass the test. (i.e. pretending to be a child). The Turing Test put
+apart, we're still far away from creating an Artifical Intelligence that could
+perform as well as a Human in every domain, and not only in \gls{NLPLabel}
+
+Super intelligence and singularity \cite{Kurzweil}
 Computer Equivalent to Human , super intelligence, strong AI \cite{Turing}
 
 
@@ -647,8 +680,15 @@ Theodore Modis – The Singularity Myth
 \addcontentsline{toc}{section}{Conclusion}
 
 \pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Glossary  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\glsaddall
+\printglossaries
+
+\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
