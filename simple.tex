@@ -115,7 +115,7 @@ Intelligence, but it is a spectacular example of Artifical Narrow Intelligence.
 
 So even if we're not yet close to building an AGI, we've managed to build great
 ANI's in various domains. Watson and Deep blue were good examples. Another
-astonishing one is an AI developed at google that learns to play video Games
+astonishing one is an AI developed at Google that learns to play video Games
 \cite{Atari}. The team behind it used a mix of two methods, deep learning and
 reinforcement learning, and the resulting AI
 was able to learn to play on old Atari Games. It only used the video signal
@@ -143,6 +143,7 @@ machines, and make them able to understand queries formulated with natural
 language. This is an important aspect of AI in order to pass the Turing test we
 discussed earlier.
 \\
+
 
 The purpose of this paper is to give a general overview of the recent
 improvements in Artifical Intelligence studies. It is not intended to be a
@@ -195,7 +196,6 @@ expressed by some members of the scientific community.
 Models are better when trained on bigger datasets
 
 \subsection{Modern Models and their applications}
-<<<<<<< HEAD
 
 solving problems by exploring a space of states
 Different exploration methods
@@ -248,10 +248,10 @@ a few.
 \paragraph{Technology behind those cars}
 
 Let's look at the technology behind those.
-\\
+
 First, autonomous car include a ton of sensors to gather data about their
 environment. Let's look into those.
-\\
+
 The position of the car is determined with a classic GPS, to which are added
 tachometers, altimeters and gyroscopes to enrich the only GPS data. Then come
 radar sensors that are located all around the car to localize potential
@@ -266,9 +266,9 @@ the LIDAR: Light detection and ranging. This element is located at the top of
 the car. It identifies the edges of the road, and provides a 360 projection of
 the environment around the car.
 
-\vspace{5mm}
+\smallskip
 \includegraphics[width=\textwidth]{car-diagram}
-\vspace{5mm}
+\smallskip
 
 Second, the car includes a powerful computer to analyze all these parameters
 and actually \lq drive\rq the car. Let's take the example of Google's software
@@ -281,13 +281,13 @@ fed with the driving data of million of other cars
 that Google has been collecting. This video by Google provides a great example
 of how the car perceives its environment and can make decisions.
 
-\vspace{5mm}
+\smallskip
 \includegraphics[width=\textwidth]{google-car}
 How the Google car perceives its environment. More in video here: \url{https://www.youtube.com/watch?v=dk3oc1Hr62g}
-\vspace{5mm}
+\smallskip
 
 \paragraph{Car industry discruption}
-\\
+
 The disruption is happening at several levels: some startups are building addons
 to current cars, so they can get self-driving functionnalities. For instance,
 a Californiancompany called Cruise
@@ -321,22 +321,19 @@ It's not only about replacing the driver, it's about making the car available
 for customers at any time, on any day. Whereas a driver takes some rest and
 parks their car, a self-driving car could be on the road almost 24/7.
 
-\vspace{5mm}
-
+\medskip
 \includegraphics[width=\textwidth]{vehicle-cost}
+\smallskip
 
-\vspace{5mm}
 No matter who's leading that change, it's likely that our own definition of the
 car is going to change. Mercedes has shown an example of a car being similar to
 a living room: the Mercedes-Benz F 015. Travellers could sleep, chat, browse the
 internet as if they were at home. The car has been driving around San Francisco
 this year.
 
-\vspace{5mm}
-
+\smallskip
 \includegraphics[width=\textwidth]{mercedes}
-
-\vspace{5mm}
+\smallskip
 
 Another big change would be the oil station network. Since the car could drive
 themselves to refill, or could be fully electricity powered, it will most likely
@@ -344,7 +341,7 @@ be the end of oil stations as we know them. Those will be probably automated as
 well, and moved to non-residential areas.
 
 
-\subsubsection{Speech \& natural-language recognition, or the death of interfaces}
+\subsubsection{Speech \& natural-language recognition}
 
 The speech recognition movement has been initiated to the large public with a
 startup bought by Apple, Siri. This startup was initiated a DARPA project as
@@ -355,8 +352,8 @@ This technology enables the user to perform actions on the service of his
 choosing (OpenTable, Yelp), without having to use any interface. The speech is
 the communication tool.
 \\
+
 \paragraph{Technology behind it}
-\\
 Personal assistant technologies rely on three parts.
 The first one is about extracting the meaning of the speech to figure out which
 action to perform. In that case, Siri uses for instance part of speech tagging,
@@ -366,9 +363,9 @@ ability to connect with very various systems (AirBnb, HotelTonight, Couchsurfing
 ,Bookking.com only to make a hotel reservation). Once this has been done, Siri
 needs to communicate back with the user, converting API responses to oral \&
 human communication.
-\\
+
 \paragraph{Use cases}
-\\
+
 Plenty of services have followed the Siri path, usually in a more advanced
 fashion. It's interesting to note that some services are built with technology
 at its core (Siri \& Google Now), whereas others are human-based at first. The Y
@@ -473,32 +470,28 @@ the simplest.
 A new generation of SaaS is on the rise. The current SaaS solutions are comparable to toolboxes. They offer the ability to perform any action on any object. For instance, in the Salesforce interface (a CRM in SaaS for Sales people), you can basically customize the interface as much as you want so you can display any piece of information about a prospect.
 
 
-\\
+\smallskip
 \includegraphics[width=\textwidth]{salesforce}
-\\
+\smallskip
 
 The main challenge with those interfaces is that they end up being very crowded. There a second issue. The more information there is, the more complex it becomes to identify that you should perform an action. Say one of the metrics you use to track the customers usage of your application goes down. You may have a hundred metrics and miss this. Therefore, you won't be able to notice it.
 SaaS CRM are great to manage a very large number of customers, but that comes with a price. The ability to pay a lot of attention to a given customer doesn't scale that easily.
 There are some solutions. CRM like Salesforce, Zoho CRM, Zendesk and others provide the ability to create rules to identify specific behavior, so the user can be notified about certain events. Say a customer is about to churn because metric X is low, the sales rep will get a notification and will email the prospect.
 All this sounds like it could be a good candidate for machine learning right? It is. A new generation of SaaS software is on the rise. This generation uses machine learning to automate those patterns. Essentially it can do two things: 1. is improving the user experience, and 2. is helping the user in regards to what to do to reach their goal.
 
-\\
 \paragraph{Smart interfaces}
-\\
 
 First, the user experience. We've seen that the interace of the current SaaS is usually crowded. That negatively impacts the productivity of the user, because they need to find the right piece of information they need among a ton of pieces of information. How could that be easier. Let's take the example of Zendesk, which is a CRM for customer support. Essentially, Zendesk is designed to respond to customers' inquiry, and to make it easy to satisfy those customers. The thing is, there are a ton of information, both available inside Zendesk, or in 3rd party services (e.g. the payment platform the company uses). Therefore, the customer support person needs to look around for the right piece of information, which takes time. Machine learning can help here. Companies like Gorgias.io, or Wise.io already display specific contextual buttons for the user to take actions according to the content of the message.
 
-\\
+\smallskip
 \includegraphics[width=\textwidth]{zendesk}
 Gorgias can suggest the right canned response to a message
-\\
+\smallskip
 
 It means when responding to a message, the support person doesn't have to look around for the right canned response. They are just suggested it by those smart pieces of software.
 It could be the same with the information displayed in the interface. A customer request contains a large amount of information, that can help identify what piece of information will be needed by the customer support person to satisfy the request. On top of this, customer support is usually receiving hundreds of requests per day. Therefore, their could be tools that only show the right piece of information to the user, based on what is needed to resolve the case. One step further would be to suggest the right piece of information to the customer.
 
-\\
 \paragraph{Suggestions of actions}
-\\
 
 Second, we can expect the next generation of software for Enterprise businesses to be able to suggest actions and identify patterns by itself.\footnote{http://techcrunch.com/2015/07/27/the-next-wave-of-enterprise-software-powered-by-machine-learning} These services will be based on the collection of very large amount of data about a given customer. Then, it will be able to identify actions to be made in regards to the customer. A good example of it is identifying that a customer is ready to buy. A few SaaS services already provide that kind of intelligence: \href{http://www.gainsight.com/}{Gainsight} and \href{http://uk.insidesales.com/}{Insidesales} are good examples of it.
 The main challenge they have is that they work as plugings. Therefore, their service is great, but cannot imapct the user experience of the sales person inside Salesforce for instance.
@@ -509,49 +502,67 @@ It's likely that unifying the user flow, which means the current course of actio
 
 \subsubsection{The path to the full-software company}
 
-If you look at how a SaaS business works today, you'll realize that the company essentially relies on a very large number of other SaaS services. For instance, it will use a SaaS platform for analytics (MixPanel, Kissmetrics, another for marketing (Marketo, Customer.io), another for CRM (Intercom, Salesforce) another to handle payments & accounting (Stripe, Octobat, Baremetrics), etc.
-All this demonstrate one reality, each business unit in the company has its own SaaS platform, and they are all inter-connected. The step one was to provide each of those business units with a tool that facilitates their life. Step 2 is to automate those business units. A good example of it is Stripe, Baremetrics & Octobat. Those three SaaS combined can almost take care of all the payments, invoicing and sales reporting, without requiring a heavy setup not human intervention once they work. Octobat automatically invoices the customers according to the payments which were made or which are scheduled in Stripe. Baremetrics does the reporting out of the box.
-\\
+If you look at how a SaaS business works today, you'll realize that the company essentially relies on a very large number of other SaaS services. For instance, it will use a SaaS platform for analytics (MixPanel, Kissmetrics, another for marketing (Marketo, Customer.io), another for CRM (Intercom, Salesforce) another to handle payments \& accounting (Stripe, Octobat, Baremetrics), etc.
+All this demonstrate one reality, each business unit in the company has its own SaaS platform, and they are all inter-connected. The step one was to provide each of those business units with a tool that facilitates their life. Step 2 is to automate those business units. A good example of it is Stripe, Baremetrics \& Octobat. Those three SaaS combined can almost take care of all the payments, invoicing and sales reporting, without requiring a heavy setup not human intervention once they work. Octobat automatically invoices the customers according to the payments which were made or which are scheduled in Stripe. Baremetrics does the reporting out of the box.
 
+\smallskip
 \includegraphics[width=\textwidth]{baremetrics}
 Baremetrics provides business analytics out of the box for the company manager to monitor progress.
-\\
 
-One can guess that this behavior will expend to other areas of the business, that will be fully automated. Some people think it will only apply to blue collar work. But that's not the case. Project management can also be automated. Tools like \url{https://www.mturk.com/mturk/welcome}{Mechanical Turk} by Amazon enable to distribute work to remote contractors, and to achieve big projects at scale. Researchers have worked on a experiment: a basic AI software had to conduct a project from Scratch with this platform, by splitting the general task into small pieces that it hired contractors to do. This is probably also a glance at the future of a company: middle management will be automated.
-\\
+\smallskip
+
+One can guess that this behavior will expend to other areas of the business, that will be fully automated. Some people think it will only apply to blue collar work. But that's not the case. Project management can also be automated. Tools like \href{https://www.mturk.com/mturk/welcome}{Mechanical Turk} by Amazon enable to distribute work to remote contractors, and to achieve big projects at scale. Researchers have worked on a experiment: a basic AI software had to conduct a project from Scratch with this platform, by splitting the general task into small pieces that it hired contractors to do. This is probably also a glance at the future of a company: middle management will be automated.
+
 
 \paragraph{The Uber example}
-\\
 
-Probably the best example of this is Uber. A blog post by Peter Reinhardt\footnote{\href{http://rein.pk/replacing-middle-management-with-apis/}{Replacing Middle Management with APIs}} demonstrates that a big trend among tech businesses is to automate workloads distributions. Uber does it by providing end users to directly order a cab. If you think about the experience from the taxi driver experience, their workload is totally automated. They are assigned rides by Uber's algorithm, which they just need to execute. Same goes with other kinds of contractor work, for instance \url{https://www.getbannerman.com/}{Bannerman} provides the ability to book security gards on demand, without the middle man.
-\vspace{5mm}
-\\
+Probably the best example of this is Uber. A blog post by Peter Reinhardt\footnote{\href{http://rein.pk/replacing-middle-management-with-apis/}{Replacing Middle Management with APIs}} demonstrates that a big trend among tech businesses is to automate workloads distributions. Uber does it by providing end users to directly order a cab. If you think about the experience from the taxi driver experience, their workload is totally automated. They are assigned rides by Uber's algorithm, which they just need to execute. Same goes with other kinds of contractor work, for instance \href{https://www.getbannerman.com/}{Bannerman} provides the ability to book security gards on demand, without the middle man.
+\smallskip
 \includegraphics[width=\textwidth]{uber-graph}
-Uber can predict taxi traffic based on historical data, and suggest drivers to go to the right place. This graph\url{http://blogs.mathworks.com/loren/2014/09/06/analyzing-uber-ride-sharing-gps-data/}{graph} shows the rides made by Uber drivers on weekends in San Francisco.
+Uber can predict taxi traffic based on historical data, and suggest drivers to go to the right place. This graph\href{http://blogs.mathworks.com/loren/2014/09/06/analyzing-uber-ride-sharing-gps-data/}{graph} shows the rides made by Uber drivers on weekends in San Francisco.
+
 The size of the nodes represent the number of rides per location, hence their popularity.
 The colors (green, blue, red) show which cluster a node belong to. Hence, you can predict in which area a taxi driver will drive: we'll most likely stay in the same cluster, and distribute the work accordingly.
-\\
+\smallskip
 
 \paragraph{How to achieve a full-software company}
-\\
 
 There are two challenges related to building a full software company.
 One is the ability to build a software for each business unit. We've seen that the startup ecosystem is making progress in that direction: Uber is doing it for the taxi workload management, Octobat for invoicing software. We can expect to see more and more pieces of software handling part of the business.
 The second aspect of it is the ability to gather and share data. For a piece of software to do the full job of a business unit (say: accounting), the software needs to have access to all the data related to the business. Usually, this data is manually shared between services. To automate the process of sharing information, there's a need for a software that fully handles it.
-We're good progress here. A company like \url{https://segment.com/}{Segment.com} handles it for analytics and user activity data. The admin just needs to install Segment on their website and define user events. Then, it will share this user data among a large amount of third party services through API integrations built by them. The user just need to activate a service on Segment for the data to be shared. It's that easy.
-\\
 
+We're good progress here. A company like \href{https://segment.com/}{Segment.com} handles it for analytics and user activity data. The admin just needs to install Segment on their website and define user events. Then, it will share this user data among a large amount of third party services through API integrations built by them. The user just need to activate a service on Segment for the data to be shared. It's that easy.
+
+\smallskip
 \includegraphics[width=\textwidth]{segment}
 Services like Segment share data among all software a company has.
-\\
+
+\smallskip
 
 We can expect to see similar services at the scope of the whole company. Think about the ability for a software not only tohave access to any piece of information about users or about the business, but also to be able to perform actions in third parties. Today, we're at the information sharing step, but soon we'll reach the latter.
 Once it's possible to both share information and perform actions (e.g. offer them a refund after they experience a bug or raise a complaint), we'll reach one step further in the fully automated software company.
 The human work may then focus on the creativity aspect of it, while it will be possible to fully autoamte the operational side of things.
 
-\subsubsection{New kinds of business models}
+\subsubsection{A shift in pricing and business models}
+The current business models in the startup ecosystem are the following:
+\begin{itemize}
+  \item Charge to the end user
+  \begin{enumerate}
+    \item Monthly subscription (SaaS B2B, Media, etc.)
+    \item Upfront cost (software)
+    \item Transaction fee / usage fee
+  \end{enumerate}
+  \item Charge to a third party (mostly advertising)
+  \begin{enumerate}
+    \item Monthly subscription (SaaS B2B, Media, etc.)
+    \item Transaction fee / usage fee
+  \end{enumerate}
+\end{itemize}
 
-
+In the last 10 years, we've seen a strong shift from upfront cost to monthly subscription \& usage fee. A good example of is the Adobe suite. It was priced per version until 2013 when they started charging per month, shifting to a SaaS business model.
+The latter (subscription and usage fee) are alligned to the payer's interest: you pay as you use the service, which means you pay as you get value from it. These two models tend to be ideal because of the mere fact that they are alligned with the user's interest. One can note that usage fee is the best alligned of the two, and therefor the one companies favor.
+The challenge is that to price your service according to usage, you need to show that usage directly impacts the customer's interest. Let's take the example of a recruiting platform. Some companies like Job boards enable you to post a listing for a job offering online. You pay a subscription: 1 listing for a month costs a certain price. Whereas the customer's interest is to hire the right person for that job, not to post the listing. As software gets better, and as automation and communication between pieces of software increases, it will become easier to evaluate the performance of this job listing by the quality of applicants to that jobs. Therefore, the model will change from subscription to usage fee, where the usage is alligned with the benefit you expect from the service.
+All this suggests that services like recruiting will be split into smaller services (job broadcasting, candidate screening with machine learning) that will enable to price based on what's considered has performance, in that example succesfully hire someone. We can expect the general trend of having software automatically performing tasks and of providing objective stats on its performance to lead to more customer-driven business and pricing models.
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -559,20 +570,69 @@ The human work may then focus on the creativity aspect of it, while it will be p
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Limits}
+\section{The limits of Artificial Intelligence}
+
+\subsection{Technical limitations}
+
+\subsubsection{Computing limitations}
+
+\subsubsection{Lack of data}
+
+\subsection{AI represents a major challenge for startups and for the society}
+
+\subsubsection{AI and Machine Learning are reshaping the job market}
+
+\paragraph{Some jobs will disappear}
+
+As machine learning makes progress, it can automate things that were made by human in the past. Again, a good example of it is the car industry. While it's probably a good thing for anyone to not have to drive your car to work, it gets much worse if you're a taxi driver and work to pay the universtity fees of your children. Car drivers are we know them are likely to disappear one day, and this day is not that far.
+The French car company Valeo states that there are 4 steps from manual driving to fully self-driving cars. One is support to park your car. Two is a car that can park itself after you've brought it next to a parking slot. Three is a car that you drop next to a parking, and that can find its way to the parking spot itself. Four is the fully self-driving car. We're already at step two. The company predicts that we'll be at step 3 in 2020, and step four in around 2025.
+What's the impact? People who drive car for a living will lose their jobs. Along with truck drivers. Along with people who work in oil stations. Along with small towns which only exist because of car or trucks stopping by to rest. It's likely that some restaurants or motel nearby the road will disappear.
+That's just the example of the car industry. A ton of other industry will be impacted: industrial workers, office and administrative support, transportation, construction, etc.
+
+\smallskip
+\includegraphics[width=\textwidth]{jobs}
+\href{http://www2.deloitte.com/content/dam/Deloitte/uk/Documents/uk-futures/london-futures-agiletown.pdf}{Study by Deloitte} on jobs in at risk from automation
+\smallskip
+
+Usually, those who protest against that trend have to face the fact that technology is creating more jobs than the number of jobs it detroys. Though, a \href{http://www.pewinternet.org/2014/08/06/future-of-jobs/}{Pew Research article} states that for the first time, experts consider that by 2025, technology will destroy more jobs than the number of jobs it creates. It's a widespread trend to think that this will mostly impact blue-collar jobs. Though, it's likely that it will impact white-collar as well. We've looked into it: management-related tasks can for instance be automated. Lawyers, accountants, financial people, traders will most likely suffer the impact of machine learning progress as well.
 
 
 
+\paragraph{A change in the way we work}
 
-Sources
+We can expect the way we work to change as well, though in positive fashion. White-collars today spend a lot of their time working in front of a computer. Progress we've analyzed before in the NLP area will reshape the way we work. For instance, most communication is currently handled through written form, we basically communicate with our keyboard for work. NLP can enable a change here, we'll be able to work using our voice to virtually communicate (as we currently do with emails). This is an example of the positive impact machine learning can have on jobs, increasing worker's productivity.
 
-\section{Car}
+Those changes lead to two major challenges for our society. One is about reshaping the way we work. Two is about enabling people to work.
 
-\url{http://www.google.com/selfdrivingcar/}
-\url{http://www.businessinsider.com/why-uber-is-investing-in-autonomous-cars-2015-8?IR=T}
-\url{http://www.entrepreneur.com/article/243751}
-\url{http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/}
-\url{http://my.teslamotors.com/fr_CH/forum/forums/tesla%E2%80%99s-musk-sees-fully-autonomous-car-ready-5-years}
+\subsubsection{New social rules}
+
+Since we can expect technology to start destroying jobs by 2025, we'll need to rethink the way society works. Today, work is the core element of the society. Unemployed people are helped to find a job. We studdy to find a job. Social classes depends on jobs.
+The thing is, if we can automate most of the work company do today (growing food, enabling people to move, producing energy), the time when progress was based on economic growth and work will come to an end, or at least the role of jobs in the society will change.
+This will impact our daily lives, the norm won't be to work for 45 years anymore. This won't be possible because of the lack of jobs. In France, working 35 hours a week is today considered by many nations as detrimental to the country's economic health. But we can expect it to become the norm. \href{http://fourhourworkweek.com/}{Tim Ferris 4-hour man week} could become a reality.
+Then comes the question of money. If people can't find jobs for their whole life, how will they make money. The idea of a \href{http://www.globalresearch.ca/an-unconditional-citizens-income-a-basic-guaranteed-minimum-income/5423130}{minimum income} is considered a way to solve this problem. The society will be able to provide each citizen with enough to live, in the form of a minimum income. Then, the citizen will have the possibility to work to increase that income.
+The main challenge will be in the definition of this work. What jobs will be available once technology has eaten most of the jobs we know? It's likely that the barrier to entry to a job will get higher. Workers will need to have a solid background and high cognitive capabilities to do a job that generates revenue. Hence, education will be more important than ever.
+
+\subsubsection{The rising importance of education}
+
+Today, school is about enbaling people to have common ground and to enter the job market once they become adults. Some students drop out of school before having a degree, and can find a blue-collar job. Though, what happens when those jobs no longer exist.
+We've seen that craftmanship will always be values. For instance, the most efficient way to produce watches is to build them in a factory, with machine assembling the different components of it. Though, people value watches that have been made by a craftman. If we stick to this reasoning, we can expect some blue-collar jobs to continue existing. Though, they will produce luxury items.
+For the big part of it, jobs will require a very strong background. Hence, school and university will need to train students better and better with time to reach the always increasing barrier to entry on the laber market. Most of the jobs will be engineer-level jobs.
+Consequently, we'll need to reshape the way we teach to manage to increase the level of students each year, so they can find a job.
+
+
+\section{Bibliography}
+Nick Bostrom, Superintelligence: Paths, Dangers, Strategies
+Ray Kurzweil, The Singularity is Near
+James Barrat, Our Final Invention
+Stuart Armstrong and Kaj Sotala, MIRI – How We’re Predicting AI—or Failing To
+Theodore Modis – The Singularity Myth
+
+\subsection{Self-driving Cars}
+\url{http://www.google.com/selfdrivingcar/}\\
+\url{http://www.businessinsider.com/why-uber-is-investing-in-autonomous-cars-2015-8?IR=T}\\
+\url{http://www.entrepreneur.com/article/243751}\\
+\url{http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/}\\
+\url{http://my.teslamotors.com/fr_CH/forum/forums/tesla%E2%80%99s-musk-sees-fully-autonomous-car-ready-5-years}\\
 
 \section{Speech recognition}
 
