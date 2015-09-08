@@ -16,8 +16,25 @@
         Grande Ecole - HEC\\
 }
 \date{\today}
+
 \makeglossaries
 \makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Glossary Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newacronym{NLP}{NLP}{Natural Language Processing}
+\newacronym{AGI}{AGI}{Artificial General Intelligence}
+\newacronym{ASI}{ASI}{Artificial Super Intelligence}
+\newacronym{ANI}{ANI}{Artifical Narrow Intelligence}
+
+\newglossaryentry{neuralLabel}
+{
+  name={Neural Network},
+  description={is fairly complex}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,36 +98,31 @@
 \section*{Introduction}\label{introduction}
 \addcontentsline{toc}{section}{Introduction}
 
-%Introduction about super intelligence and the theories relative to it
-
-\lq Can machines think? \rq This is the question Alan Turing raised in his paper
-{\em The Imitation Game} \cite{Turing}. In order to answser this question,
-Turing designed a test, a Game, that a {\em thinking} machine would be able to
-pass. Very simply, a machine would pass this test, if a human Interrogator who
-would pass written questions in two different rooms, would not be able to tell
-in which room the machine is by examining its answers.
-
-\newacronym{NLPLabel}{NLP}{Natural Language Processing}
-
-\newglossaryentry{computer}
-{
-  name=computer,
-  description={is a programmable machine that receives input,
-               stores and manipulates data, and provides
-               output in a useful format}
-}
-
-\gls{computer}
-
+{\em \lq Can machines think ?\rq }. This is the question Alan Turing raised in
+his paper {\em The Imitation Game} \cite{Turing}. In order to answser this
+question, Turing designed a test, a Game, that a {\em thinking} machine would
+be able to pass. Very simply, a machine would pass this test, if a human
+interrogator would give written questions to subjects in two different rooms,
+one subject being a machine, and the other one being a human, would not be able
+to tell in which room the machine is by examining its answers.
+\\
 An AI simulating a 13 years old Ukrainian boy is said to have pass this famous
-test. {\footnote \href{http://www.bbc.com/news/technology-27762088}
+test \footnote{ \href{http://www.bbc.com/news/technology-27762088}.
 {BBC - Eugene Goostman}} However, this result was highly controversial due to
 the setting of the test (short Q\&A sessions), and the deceptive strategy adopted
-in order to pass the test. (i.e. pretending to be a child). The Turing Test put
-apart, we're still far away from creating an Artifical Intelligence that could
-perform as well as a Human in every domain, and not only in \gls{NLPLabel}
+in order to pass the test. (i.e. pretending to be a child). According to those
+critics, we're still far from creating an Artifical Intelligence that could
+perform as well as a Human in every domain, and not only in \gls{NLP}.
+\\
+But, are we really far from building human like AI ? In his book
+{\em The Singularity is near} \cite{Kurzweil}, bases his theory upon the fact
+that technological progress follows the Moore's Law
+\footnote{ \href{https://en.wikipedia.org/wiki/Moore\%27s_law}
+{Wikipedia - Moore's Law} }, and as such, is exponential. According to him, we're
+accustomed to think linearly, and subsequently not able to handle exponential
+progress. Consequently, we shall see \gls{AGI} appear in a near future.
 
-Super intelligence and singularity \cite{Kurzweil}
+Super intelligence and singularity
 Computer Equivalent to Human , super intelligence, strong AI \cite{Turing}
 
 
@@ -309,7 +321,7 @@ called \lq Chauffeur \rq . It's composed of two parts. One is hardcoded
 (road signs, traffic lights colors), and one is a learning part. Every mile is
 logged and provides additionnal data on how the car should drive itself.
 Therefor, the car is able to predict the behavior of surrounding elements
-(both car, bikes, pedestrians). Such things are based on neural networks behing
+(both car, bikes, pedestrians). Such things are based on \gls{neuralLabel} being
 fed with the driving data of million of other cars
 that Google has been collecting. This video by Google provides a great example
 of how the car perceives its environment and can make decisions.
@@ -684,8 +696,6 @@ Theodore Modis – The Singularity Myth
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Glossary  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\glsaddall
 \printglossaries
 
 \pagebreak
