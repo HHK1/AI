@@ -77,6 +77,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\smallskip
+
 \tableofcontents
 
 \pagebreak
@@ -98,45 +100,45 @@
 \section*{Introduction}\label{introduction}
 \addcontentsline{toc}{section}{Introduction}
 
+\smallskip
+
 {\em \lq Can machines think ?\rq }. This is the question Alan Turing raised in
 his paper {\em The Imitation Game} \cite{Turing}. In order to answser this
 question, Turing designed a test, a Game, that a {\em thinking} machine would
 be able to pass. Very simply, a machine would pass this test, if a human
-interrogator would give written questions to subjects in two different rooms,
+interrogator giving written questions to subjects in two different rooms,
 one subject being a machine, and the other one being a human, would not be able
 to tell in which room the machine is by examining its answers.
 \\
+
 An AI simulating a 13 years old Ukrainian boy is said to have pass this famous
-test \footnote{ \href{http://www.bbc.com/news/technology-27762088}.
-{BBC - Eugene Goostman}} However, this result was highly controversial due to
+test \footnote{\href{http://www.bbc.com/news/technology-27762088}
+{BBC - Eugene Goostman}}. However, this result was highly controversial due to
 the setting of the test (short Q\&A sessions), and the deceptive strategy adopted
 in order to pass the test. (i.e. pretending to be a child). According to those
 critics, we're still far from creating an Artifical Intelligence that could
 perform as well as a Human in every domain, and not only in \gls{NLP}.
+We'll call such an AI an \gls{AGI}, as it has the same intelligence as a human.
 \\
+
 But, are we really far from building human like AI ? In his book
 {\em The Singularity is near} \cite{Kurzweil}, bases his theory upon the fact
 that technological progress follows the Moore's Law
-\footnote{ \href{https://en.wikipedia.org/wiki/Moore\%27s_law}
+\footnote{\href{https://en.wikipedia.org/wiki/Moore\%27s_law}
 {Wikipedia - Moore's Law} }, and as such, is exponential. According to him, we're
 accustomed to think linearly, and subsequently not able to handle exponential
-progress. Consequently, we shall see \gls{AGI} appear in a near future.
+progress. Kurzweil explains that the rise of an \gls{AGI} is inevitable, and
+those saying the contrary are just not thinking exponentially. Moreover, the
+rise of an \gls{AGI} means that we'll have created a machine with the same level
+of intelligence as a standard Human, but with a much greater computational power.
+If the machine is capable of self improvement, it won't be long before it
+evolves into an \gls{ASI}, an artificial intelligence with capacities so great,
+that it is impossible to predict what could happen. This explosion of intelligence
+is called a technological singularity. Irvin Good, a mathematician who worked
+with Turing was one of the first to write about it:
+\\
 
-Super intelligence and singularity
-Computer Equivalent to Human , super intelligence, strong AI \cite{Turing}
-
-
-Strong AI is (maybe) not possible \cite{ChineseRoom}
-
-IBM's victory at Jeopardy, called \lq An ingenous program, not a computer that
-can think\rq \footnote{
-\href{http://cacm.acm.org/magazines/2012/1/144824-artificial-intelligence-past-and-future/fulltext}
-{Artificial Intelligence: Past and Future}}
-
-%ANI
-%AGI
-%ASI
-
+\smallskip
 
 \begin{quotation}
    Let an ultraintelligent machine be defined as a machine that can far surpass
@@ -148,18 +150,32 @@ can think\rq \footnote{
    that man need ever make \cite{Good}.
 \end{quotation}
 
-
-
-%Back to reality and what is currently possible
-Nevertheless, IBM's computer Watson {\em did} manage to win at Jeopardy!, and to
-beat the best players in the world. The argument that Watson is not thinking,
-because it was not able to know and realise it has won is true. However, the
-technical feat is here. Watson is definitely not an Artifical General
-Intelligence, but it is a spectacular example of Artifical Narrow Intelligence.
+However, these theories are highly controversial, and scientists strongly disagree
+on those issues. Even Turing's test is disputed. John Searle challenged it in a
+thought experiment known as the Chinese Room \cite{ChineseRoom}. If an english
+speaking person was put in a room, with very precise instruction (i.e. a programm)
+in English, to translate a set of caracters (chinese questions) into another
+set of caracters (the answers to those questions), so that chinese observers would
+be convinced to speak with a chinese person, would that mean that the person in the
+room {\em actually} speaks Chinese? Or would he just simulate the ability to
+understand it ? For Searle, the latter is true, and a machine who would pass the
+Turing Test could not be considered a {\em thinking} machine.
 \\
 
-So even if we're not yet close to building an AGI, we've managed to build great
-ANI's in various domains. Watson and Deep blue were good examples. Another
+When IBM's computer, Watson, won at the Question \& Answer game Jeopardy, Searle
+called Watson \textit{\lq  An ingenous program, not a computer that
+can think\rq} \footnote{
+\href{http://cacm.acm.org/magazines/2012/1/144824-artificial-intelligence-past-and-future/fulltext}
+{Artificial Intelligence: Past and Future}}. Nevertheless, IBM's computer Watson
+{\em did} manage to win at Jeopardy!, and to beat the best players in the world.
+The argument that Watson is not thinking, because it was not able to know and
+realise it has won is true. However, the technical feat is here. Watson is
+definitely not an Artifical General Intelligence, but it is a spectacular
+example of Artifical Narrow Intelligence.
+\\
+
+So even if we're not yet close to building an \gls{AGI}, we've managed to build great
+\gls{ANI}s in various domains. Watson and Deep blue were good examples. Another
 astonishing one is an AI developed at Google that learns to play video Games
 \cite{Atari}. The team behind it used a mix of two methods, deep learning and
 reinforcement learning, and the resulting AI
@@ -172,8 +188,8 @@ where planning is necessary. This example shows how it is possible to interact
 in an adaptive maner with more complex environnments where the input is a video.
 \\
 
-Speaking of more complex environnment, another example of very good ANI is the
-self driving car. It is much better than human at driving, and it can do it
+Speaking of more complex environnment, another example of very good \gls{ANI} is
+the self driving car. It is much better than human at driving, and it can do it
 non-stop and in a safely way. The google car has now driven over 1 million miles,
 and has been involved in only 14 accidents. The car was even not responsible in
 those accidents, or was being manually driven by a google employee. Self driving
@@ -708,19 +724,20 @@ Theodore Modis – The Singularity Myth
   \bibitem{seq2seq} Oriol Vinyal \& Quoc V. Le,
   {\em A Neural Conversation Model}, Google - June 2015
 
-  \bibitem{Kurzweil} Ray Kurzweil, {\em The Singularity is near} - 2005
-
   \bibitem{Turing} Alan Turing, {\em The Imitation Game} - 1950
 
-  \bibitem{Atari} DeepMind Technologies, {\em Playing Atari with Deep
-  Reinforcement Learning} - 2015
+  \bibitem{Kurzweil} Ray Kurzweil, {\em The Singularity is near} - 2005
+
   \bibitem{Good} Irving J. Good, {\em Advances in Computers, Vol 6} - 1965
 
   \bibitem{ChineseRoom} John Searle, {\em Minds, Brains, and Programs},
   Behavioral and Brain Sciences - 1980
 
-  \bibitem{RusselAI} Stuart Russel \& Peter Norvig
+  \bibitem{Atari} DeepMind Technologies, {\em Playing Atari with Deep
+  Reinforcement Learning} - 2015
 
+
+  \bibitem{RusselAI} Stuart Russel \& Peter Norvig
   {\em Artificial Intelligence - A Modern Approach, 3rd Edition} - 2010.
 
 
