@@ -54,7 +54,7 @@
 
 \phantom{TEXT}
 \thispagestyle{empty}
-\pagenumbering{arabic}
+\pagenumbering{gobble}
 
 \vspace{200pt}
 \begin{quotation}
@@ -78,6 +78,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \smallskip
+\pagenumbering{arabic}
 
 \tableofcontents
 
@@ -262,6 +263,9 @@ scientists of IBM. It was held at Dartmouth College, and the scientists
 attending the project were to become major authors and influencers for the
 decades to come. \cite{DartMouth}\\
 
+\subsubsection{First successes}
+
+
 The early programs used what is essentially a tree exploration program. For a maze
 exploration, or a proof of a theorem, the algorithm is simply moving forward the
 possibilities, turning back when it reaches a dead end, or abandonning a whole
@@ -363,15 +367,26 @@ intelligent}, it ceases to be regarded as intelligent.\rq
 
 \subsection{Why is AI progressing faster and faster?}
 
+One of the major reason of AI first disapointments was the lack of hardware
+powerful  enough to crack on the problems they were facing. Today's progress
+have made hardware powerful enough to solve certain problem or achieve
+significant results. How is this, and the  access to large training datasets
+helping artificial intelligence ?
 
 \subsubsection{Hardware progress}
 
-%Moore Law Increase in Power
 Kurzweil's theory about the singularity may be controversed, he's right about
 something: We do witness exponential progress in terms of computing power. This
-is known as the Moore's Law. It states that the computational power of a computer
-unit double every two years. Even if it's true the rate of doubling is expanding
-over time,
+is known as the Moore's Law. It states that the number of transistor on an
+integrated circuit. Hence, it can be approximately said that the computational
+power available at a given price double every two years.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{moore}
+    \caption{Moore's Law}
+    \label{fig:moore}
+\end{figure}
 
 
 %Cloud computing
@@ -391,6 +406,7 @@ over time,
 %Models are better when trained on bigger datasets. Give examples
 
 
+\pagebreak
 
 \subsection{Modern Models and their applications}
 
@@ -464,7 +480,14 @@ the car. It identifies the edges of the road, and provides a 360 projection of
 the environment around the car.
 
 \smallskip
-\includegraphics[width=\textwidth]{car-diagram}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{car-diagram}
+    \caption{A chess exploration tree}
+    \label{fig:car}
+\end{figure}
+
 \smallskip
 
 Second, the car includes a powerful computer to analyze all these parameters
@@ -479,8 +502,16 @@ that Google has been collecting. This video by Google provides a great example
 of how the car perceives its environment and can make decisions.
 
 \smallskip
-\includegraphics[width=\textwidth]{google-car}
-How the Google car perceives its environment. More in video here: \url{https://www.youtube.com/watch?v=dk3oc1Hr62g}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{google-car}
+    \caption{How the Google car perceives its environment.
+    \href{https://www.youtube.com/watch?v=dk3oc1Hr62g}{More in this video}}
+    \label{fig:google_car}
+\end{figure}
+
+
 \smallskip
 
 \paragraph{Car industry discruption}
@@ -519,7 +550,14 @@ for customers at any time, on any day. Whereas a driver takes some rest and
 parks their car, a self-driving car could be on the road almost 24/7.
 
 \medskip
-\includegraphics[width=\textwidth]{vehicle-cost}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{vehicle-cost}
+    \caption{Cost of a car per mile for different scenario}
+    \label{fig:cost_of_car}
+\end{figure}
+
 \smallskip
 
 No matter who's leading that change, it's likely that our own definition of the
@@ -529,7 +567,13 @@ internet as if they were at home. The car has been driving around San Francisco
 this year.
 
 \smallskip
-\includegraphics[width=\textwidth]{mercedes}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{mercedes}
+    \caption{Mercedes Benz F 015. A driving living room}
+    \label{fig:cost_of_car}
+\end{figure}
+
 \smallskip
 
 Another big change would be the oil station network. Since the car could drive
@@ -672,7 +716,14 @@ can display any piece of information about a prospect.
 
 
 \smallskip
-\includegraphics[width=\textwidth]{salesforce}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{salesforce}
+    \caption{Salesforce's prospect interface}
+    \label{fig:cost_of_car}
+\end{figure}
+
 \smallskip
 
 The main challenge with those interfaces is that they end up being very crowded.
@@ -710,8 +761,15 @@ Wise.io already display specific contextual buttons for the user to take actions
 according to the content of the message.
 
 \smallskip
-\includegraphics[width=\textwidth]{zendesk}
-Gorgias can suggest the right canned response to a message
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{zendesk}
+    \caption{Gorgias can suggest the right canned response to a message}
+    \label{fig:gorgias}
+\end{figure}
+
+
 \smallskip
 
 It means when responding to a message, the support person doesn't have to look
@@ -774,10 +832,13 @@ intervention once they work. Octobat automatically invoices the customers
 according to the payments which were made or which are scheduled in Stripe.
 Baremetrics does the reporting out of the box.
 
-\smallskip
-\includegraphics[width=\textwidth]{baremetrics}
-Baremetrics provides business analytics out of the box for the company manager
-to monitor progress.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{baremetrics}
+    \caption{Baremetrics provides business analytics out of the box for the
+    company manager to monitor progress.}
+    \label{fig:uber-graph}
+\end{figure}
 
 \smallskip
 
@@ -797,52 +858,64 @@ glance at the future of a company: middle management will be automated.
 Probably the best example of this is Uber. A blog post by Peter
 Reinhardt\footnote{\href{http://rein.pk/replacing-middle-management-with-apis/}
 {Replacing Middle Management with APIs}} demonstrates that a big trend among
-tech businesses is to automate workloads distributions. Uber does it by providing
-end users to directly order a cab. If you think about the experience from the
-taxi driver experience, their workload is totally automated. They are assigned
-rides by Uber's algorithm, which they just need to execute. Same goes with other
-kinds of contractor work, for instance \href{https://www.getbannerman.com/}
-{Bannerman} provides the ability to book security gards on demand, without the
-middle man.
+tech businesses is to automate workloads distributions. Uber does it by
+providing end users to directly order a cab. If you think about the experience
+from the taxi driver experience, their workload is totally automated. They are
+assigned rides by Uber's algorithm, which they just need to execute. Same goes
+with other kinds of contractor work, for instance
+\href{https://www.getbannerman.com/} {Bannerman} provides the ability to book
+security gards on demand, without the middle man.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{uber-graph}
+    \caption{Uber's traffic predictions}
+    \label{fig:uber-graph}
+\end{figure}
 
 \smallskip
 
-\includegraphics[width=\textwidth]{uber-graph}
 Uber can predict taxi traffic based on historical data, and suggest drivers to
 go to the right place. This
 \href{http://blogs.mathworks.com/loren/2014/09/06/analyzing-uber-ride-sharing-gps-data/}
 {graph} shows the rides made by Uber drivers on weekends in San Francisco.
 
 The size of the nodes represent the number of rides per location, hence their
-popularity.
-The colors (green, blue, red) show which cluster a node belong to. Hence, you
-can predict in which area a taxi driver will drive: we'll most likely stay in
-the same cluster, and distribute the work accordingly.
+popularity. The colors (green, blue, red) show which cluster a node belong to.
+Hence, you can predict in which area a taxi driver will drive: we'll most likely
+stay in the same cluster, and distribute the work accordingly.
+
 \smallskip
 
 \paragraph{How to achieve a full-software company}
 
-There are two challenges related to building a full software company.
-One is the ability to build a software for each business unit. We've seen that
-the startup ecosystem is making progress in that direction: Uber is doing it for
-the taxi workload management, Octobat for invoicing software. We can expect to
-see more and more pieces of software handling part of the business.
-The second aspect of it is the ability to gather and share data. For a piece of
-software to do the full job of a business unit (say: accounting), the software
-needs to have access to all the data related to the business. Usually, this data
-is manually shared between services. To automate the process of sharing
-information, there's a need for a software that fully handles it.
+There are two challenges related to building a full software company. One is the
+ability to build a software for each business unit. We've seen that the startup
+ecosystem is making progress in that direction: Uber is doing it for the taxi
+workload management, Octobat for invoicing software. We can expect to see more
+and more pieces of software handling part of the business. The second aspect of
+it is the ability to gather and share data. For a piece of software to do the
+full job of a business unit (say: accounting), the software needs to have access
+to all the data related to the business. Usually, this data is manually shared
+between services. To automate the process of sharing information, there's a need
+for a software that fully handles it.
 
-We're good progress here. A company like \href{https://segment.com/}{Segment.com}
-handles it for analytics and user activity data. The admin just needs to install
-Segment on their website and define user events. Then, it will share this user
-data among a large amount of third party services through API integrations built
-by them. The user just need to activate a service on Segment for the data to be
-shared. It's that easy.
+We're good progress here. A company like
+\href{https://segment.com/}{Segment.com} handles it for analytics and user
+activity data. The admin just needs to install Segment on their website and
+define user events. Then, it will share this user data among a large amount of
+third party services through API integrations built by them. The user just need
+to activate a service on Segment for the data to be shared. It's that easy.
 
 \smallskip
-\includegraphics[width=\textwidth]{segment}
-Services like Segment share data among all software a company has.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{segment}
+    \caption{Services like Segment share data among all software a company has.}
+    \label{fig:segment}
+\end{figure}
 
 \smallskip
 
@@ -850,12 +923,11 @@ We can expect to see similar services at the scope of the whole company. Think
 about the ability for a software not only tohave access to any piece of
 information about users or about the business, but also to be able to perform
 actions in third parties. Today, we're at the information sharing step, but soon
-we'll reach the latter.
-Once it's possible to both share information and perform actions (e.g. offer
-them a refund after they experience a bug or raise a complaint), we'll reach one
-step further in the fully automated software company.
-The human work may then focus on the creativity aspect of it, while it will be
-possible to fully autoamte the operational side of things.
+we'll reach the latter. Once it's possible to both share information and perform
+actions (e.g. offer them a refund after they experience a bug or raise a
+complaint), we'll reach one step further in the fully automated software
+company. The human work may then focus on the creativity aspect of it, while it
+will be possible to fully autoamte the operational side of things.
 
 \subsubsection{A shift in pricing and business models}
 The current business models in the startup ecosystem are the following:
@@ -873,31 +945,31 @@ The current business models in the startup ecosystem are the following:
   \end{enumerate}
 \end{itemize}
 
-In the last 10 years, we've seen a strong shift from upfront cost to monthly
+ In the last 10 years, we've seen a strong shift from upfront cost to monthly
 subscription \& usage fee. A good example of is the Adobe suite. It was priced
 per version until 2013 when they started charging per month, shifting to a SaaS
-business model.
-The latter (subscription and usage fee) are alligned to the payer's interest:
-you pay as you use the service, which means you pay as you get value from it.
-These two models tend to be ideal because of the mere fact that they are alligned
-with the user's interest. One can note that usage fee is the best alligned of
-the two, and therefor the one companies favor.
-The challenge is that to price your service according to usage, you need to show
-that usage directly impacts the customer's interest. Let's take the example of a
-recruiting platform. Some companies like Job boards enable you to post a listing
-for a job offering online. You pay a subscription: 1 listing for a month costs a
-certain price. Whereas the customer's interest is to hire the right person for
-that job, not to post the listing. As software gets better, and as automation and
-communication between pieces of software increases, it will become easier to
-evaluate the performance of this job listing by the quality of applicants to
-that jobs. Therefore, the model will change from subscription to usage fee, where
-the usage is alligned with the benefit you expect from the service.
-All this suggests that services like recruiting will be split into smaller
-services (job broadcasting, candidate screening with machine learning) that will
-enable to price based on what's considered has performance, in that example
-succesfully hire someone. We can expect the general trend of having software
-automatically performing tasks and of providing objective stats on its performance
-to lead to more customer-driven business and pricing models.
+business model. The latter (subscription and usage fee) are alligned to the
+payer's interest: you pay as you use the service, which means you pay as you
+get value from it. These two models tend to be ideal because of the mere fact
+that they are alligned with the user's interest. One can note that usage fee is
+the best alligned of the two, and therefor the one companies favor. The
+challenge is that to price your service according to usage, you need to show
+that usage directly impacts the customer's interest. Let's take the example of
+a recruiting platform. Some companies like Job boards enable you to post a
+listing for a job offering online. You pay a subscription: 1 listing for a
+month costs a certain price. Whereas the customer's interest is to hire the
+right person for that job, not to post the listing. As software gets better,
+and as automation and communication between pieces of software increases, it
+will become easier to evaluate the performance of this job listing by the
+quality of applicants to that jobs. Therefore, the model will change from
+subscription to usage fee, where the usage is alligned with the benefit you
+expect from the service. All this suggests that services like recruiting will
+be split into smaller services (job broadcasting, candidate screening with
+machine learning) that will enable to price based on what's considered has
+performance, in that example succesfully hire someone. We can expect the
+general trend of having software automatically performing tasks and of
+providing objective stats on its performance to lead to more customer-driven
+business and pricing models.
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -924,25 +996,29 @@ human in the past. Again, a good example of it is the car industry. While it's
 probably a good thing for anyone to not have to drive your car to work, it gets
 much worse if you're a taxi driver and work to pay the universtity fees of your
 children. Car drivers are we know them are likely to disappear one day, and this
-day is not that far.
-The French car company Valeo states that there are 4 steps from manual driving
-to fully self-driving cars. One is support to park your car. Two is a car that
-can park itself after you've brought it next to a parking slot. Three is a car
-that you drop next to a parking, and that can find its way to the parking spot
-itself. Four is the fully self-driving car. We're already at step two. The company
-predicts that we'll be at step 3 in 2020, and step four in around 2025.
-What's the impact? People who drive car for a living will lose their jobs. Along
-with truck drivers. Along with people who work in oil stations. Along with small
-towns which only exist because of car or trucks stopping by to rest. It's likely
-that some restaurants or motel nearby the road will disappear.
-That's just the example of the car industry. A ton of other industry will be
-impacted: industrial workers, office and administrative support, transportation,
-construction, etc.
+day is not that far. The French car company Valeo states that there are 4 steps
+from manual driving to fully self-driving cars. One is support to park your car.
+Two is a car that can park itself after you've brought it next to a parking
+slot. Three is a car that you drop next to a parking, and that can find its way
+to the parking spot itself. Four is the fully self-driving car. We're already at
+step two. The company predicts that we'll be at step 3 in 2020, and step four in
+around 2025. What's the impact? People who drive car for a living will lose
+their jobs. Along with truck drivers. Along with people who work in oil
+stations. Along with small towns which only exist because of car or trucks
+stopping by to rest. It's likely that some restaurants or motel nearby the road
+will disappear. That's just the example of the car industry. A ton of other
+industry will be impacted: industrial workers, office and administrative
+support, transportation, construction, etc.
 
 \smallskip
-\includegraphics[width=\textwidth]{jobs}
-\href{http://www2.deloitte.com/content/dam/Deloitte/uk/Documents/uk-futures/london-futures-agiletown.pdf}
-{Study by Deloitte} on jobs in at risk from automation
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{jobs}
+    \caption{\href{http://www2.deloitte.com/content/dam/Deloitte/uk/Documents/uk-futures/london-futures-agiletown.pdf}
+    {Study by Deloitte} on jobs in at risk from automation}}
+    \label{fig:deloitte}
+\end{figure}
+
 \smallskip
 
 Usually, those who protest against that trend have to face the fact that
@@ -961,12 +1037,12 @@ most likely suffer the impact of machine learning progress as well.
 
 We can expect the way we work to change as well, though in positive fashion.
 White-collars today spend a lot of their time working in front of a computer.
-Progress we've analyzed before in the NLP area will reshape the way we work.
-For instance, most communication is currently handled through written form,
-we basically communicate with our keyboard for work. NLP can enable a change here,
-we'll be able to work using our voice to virtually communicate (as we currently do with emails).
-This is an example of the positive impact machine learning can have on jobs,
-increasing worker's productivity.
+Progress we've analyzed before in the NLP area will reshape the way we work. For
+instance, most communication is currently handled through written form, we
+basically communicate with our keyboard for work. NLP can enable a change here,
+we'll be able to work using our voice to virtually communicate (as we currently
+do with emails). This is an example of the positive impact machine learning can
+have on jobs, increasing worker's productivity.
 
 Those changes lead to two major challenges for our society. One is about
 reshaping the way we work. Two is about enabling people to work.
@@ -1016,25 +1092,28 @@ jobs will be engineer-level jobs.
 Consequently, we'll need to reshape the way we teach to manage to increase the
 level of students each year, so they can find a job.
 
-
-\section{Bibliography}
-Nick Bostrom, Superintelligence: Paths, Dangers, Strategies
-Ray Kurzweil, The Singularity is Near
-James Barrat, Our Final Invention
-Stuart Armstrong and Kaj Sotala, MIRI – How We’re Predicting AI—or Failing To
-Theodore Modis – The Singularity Myth
-
-\subsection{Self-driving Cars}
-\url{http://www.google.com/selfdrivingcar/}\\
-\url{http://www.businessinsider.com/why-uber-is-investing-in-autonomous-cars-2015-8?IR=T}\\
-\url{http://www.entrepreneur.com/article/243751}\\
-\url{http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/}\\
-\url{http://my.teslamotors.com/fr_CH/forum/forums/tesla%E2%80%99s-musk-sees-fully-autonomous-car-ready-5-years}\\
-
-\section{Speech recognition}
-
-
 \pagebreak
+
+%%%%%%%%%TODO: Romain: sort those references into something useful TODO%%%%%%%%%
+
+% \section{Bibliography}
+% Nick Bostrom, Superintelligence: Paths, Dangers, Strategies
+% Ray Kurzweil, The Singularity is Near
+% James Barrat, Our Final Invention
+% Stuart Armstrong and Kaj Sotala, MIRI – How We’re Predicting AI—or Failing To
+% Theodore Modis – The Singularity Myth
+%
+% \subsection{Self-driving Cars}
+% \url{http://www.google.com/selfdrivingcar/}\\
+% \url{http://www.businessinsider.com/why-uber-is-investing-in-autonomous-cars-2015-8?IR=T}\\
+% \url{http://www.entrepreneur.com/article/243751}\\
+% \url{http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/}\\
+% \url{http://my.teslamotors.com/fr_CH/forum/forums/tesla%E2%80%99s-musk-sees-fully-autonomous-car-ready-5-years}\\
+%
+% \section{Speech recognition}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
