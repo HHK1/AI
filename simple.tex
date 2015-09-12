@@ -434,12 +434,31 @@ datasets.
 \subsubsection{Access to big datasets}
 
 
-As a matter of fact, size of training data is important when it comes to training
-of neural networks.
+As a matter of fact, size of training data is important when it comes to
+training of neural networks. Simple models often perform better when trained on
+bigger datasets \cite{moreData} than complex models trained on much smaller
+sets. The N-gram models, which is used notably in Natural Language Processing,
+is a simple model that looks at N words at a time, and check if those words form
+a correct sentence. It can be trained on very large datasets, almost all data
+available; which is about trillions of words. \cite{ngram}.
+
+This is also true in image classification. Large and high-quality datasets of
+millions of image are available to train the latest algorithm in image
+recognition and classification. All this is possible thanks to the recent
+explosion of data in many fields.
+
+However, adding always more data may not result in better results. For certain
+models, it can harm the predictive power of the network if the data is too noisy
+or unlabeled. \cite{trainingData} Moreover, in certain domain like speech recognition,
+the size of high-quality annotated speech retranscription is fairly low, only just
+millions of word.
+
+Thus, more complex models are needed in order to improve quality of the results.
+Those models 
+
 %Explosion of data. Give size of used samples over the time for various data
 
 %Models are better when trained on bigger datasets. Give examples
-
 
 
 \subsubsection{Progress in Models}
@@ -467,7 +486,7 @@ knowledge based agents: get a representation of the world
 
 \subsubsection{Deep Learning}
 
-
+\subsubsection{Word Vectors}
 
 \pagebreak
 
@@ -580,7 +599,7 @@ bargaining advantage, as those car companies don't have the technology yet.
 Some other companies intend to replace current car makers. Tesla is the best
 example in the category. Though the company CEO, Elon Musk, is confident
 self-driving cars will hit the market by 2020, there were no public statement
-about Tesla building such cars. \footnote{\href{http://my.teslamotors.com/fr_CH/forum/forums/tesla%E2%80%99s-musk-sees-fully-autonomous-car-ready-5-years}
+about Tesla building such cars. \footnote{\href{http://my.teslamotors.com/fr_CH/forum/forums/tesla\%E2\%80\%99s-musk-sees-fully-autonomous-car-ready-5-years}
 {Elon Musk sees fully automated cars in 5 years}} In a recent video, he was asked whether Tesla
 would be willing to provide Uber with self-driving cars, and declined to answer.
 Many reporters concluded that Tesla will likely be the first company to sell
@@ -621,7 +640,7 @@ this year.
     \centering
     \includegraphics[width=\linewidth]{mercedes}
     \caption{\href{http://www.entrepreneur.com/article/243751}
-{Mercedes Benz F 015}}. A driving living room}
+    {Mercedes Benz F 015 A driving living room}}
     \label{fig:cost_of_car}
 \end{figure}
 
@@ -1146,14 +1165,6 @@ level of students each year, so they can find a job.
 
 \pagebreak
 
-%%%%%%%%%TODO: Romain: done TODO%%%%%%%%%
-
-% \section{Bibliography}
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1209,7 +1220,10 @@ level of students each year, so they can find a job.
   {Do We Need More Training Data or Better Models for Object Detection?} - 2012
 
   \bibitem{moreData} Norvig, Halevy, {\em The Unreasonable Effectiveness of Data}
-  In IEEE Intelligent Systems, Vol 24 - 2009 
+  In IEEE Intelligent Systems, Vol 24 - 2009
+
+  \bibitem{ngram} Brants, Popat, Xu, Och, Dean. {\em Large language models in machine
+  translation.}, 2007
 
   \bibitem{RusselAI} Stuart Russel \& Peter Norvig
   {\em Artificial Intelligence - A Modern Approach, 3rd Edition} - 2010.
