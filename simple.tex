@@ -35,6 +35,11 @@
   description={is fairly complex}
 }
 
+\newglossaryentry{petaflops}
+{
+  name={petaFLOPS},
+  description={One petaflop is $10^15$ floating operations per second}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +59,7 @@
 
 \phantom{TEXT}
 \thispagestyle{empty}
-\pagenumbering{gobble}
+\pagenumbering{arabic}
 
 \vspace{200pt}
 \begin{quotation}
@@ -78,7 +83,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \smallskip
-\pagenumbering{arabic}
 
 \tableofcontents
 
@@ -377,9 +381,9 @@ helping artificial intelligence ?
 
 Kurzweil's theory about the singularity may be controversed, he's right about
 something: We do witness exponential progress in terms of computing power. This
-is known as the Moore's Law. It states that the number of transistor on an
-integrated circuit. Hence, it can be approximately said that the computational
-power available at a given price double every two years.
+is known as the Moore's Law. It states that the number of transistor on dense
+integrated circuits double every two years. Hence, it can be approximately said
+that the computational power available at a given price double every two years.
 
 \begin{figure}[h]
     \centering
@@ -389,9 +393,52 @@ power available at a given price double every two years.
 \end{figure}
 
 
-%Cloud computing
+We're getting access to better and better hardware, but where do we stand
+compared to a human brain ? This is a bit of an apple and orange comparison, so
+this is just to give an idea of what has been achieved. The world's fastest
+supercomputer is Tianhe-2, in Guangzhou. It has a speed of 33.86 \gls{petaflops}
+and cost about \$390 millions. During summer 2013, the largest neural network
+simulation was run on a super computer a bit less powerful, on the K computer,
+with a speed of about 10 petaflops.
+\footnote{\href{http://www.sciencedaily.com/releases/2013/08/130802080237.htm}
+{Largest neuronal network simulation to date achieved using Japanese
+supercomputer}} The simulation represented about 1\% of the brain, and was able
+to simulate the brain activity during one second. This does not give us the
+processing speed of a human brain, and does not allow to compared directly the
+brain to those computer in term of raw power, but we can extrapolate, and
+estimate that we would need a super computer with a speed in the exaflops, which
+is $10^18$ flops. According to the moore's Law, this {\em should} happen around
+2020.
 
-%Examples with numbers of trained algorithms
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{fartogo}
+    \caption{When will super computer be equivalent to human brain ?}
+    \label{fig:fartogo}
+\end{figure}
+
+power. The Tianhe-2 uses $24MW$ with its cooling system. The brain uses 20 W. One
+other promising lead is the parallelization of computing. Thanks to more and
+more performant GPUs \footnote{Too make it simple, a GPU is capable of handling
+a large number of simple, parallel tasks.}, associated  with  the use of cloud
+computing \cite{cloud}, it helps training neural networks on large datasets.
+
+This access to better hardware, and more computing power partly explains the successes in
+Artificial Intelligence we're witnessing today. For tree exploration problems, like
+in chess, or in strategic planning, it allows the machine to evaluate the positions
+a bit deeper, making it possible to foresee more problems, or choose solutions were
+the reward is not immediate, but the final outcome better. And for neural networks,
+it allows researchers to build larger networks and better train them, with huge
+datasets.
+
+\subsubsection{Access to big datasets}
+
+
+As a matter of fact, size of training data is important when it comes to training
+of neural networks.
+%Explosion of data. Give size of used samples over the time for various data
+
+%Models are better when trained on bigger datasets. Give examples
 
 
 
@@ -399,11 +446,7 @@ power available at a given price double every two years.
 
 
 
-\subsubsection{Access to big datasets}
 
-%Explosion of data. Give size of used samples over the time for various data
-
-%Models are better when trained on bigger datasets. Give examples
 
 
 \pagebreak
@@ -418,10 +461,13 @@ Test to se if the state is a goal state
 Constraint solving problems : more general
 exemple of sudoku
 
-
 knowledge based agents: get a representation of the world
 
-first order logic: prolog and theorem resolutions
+\subsubsection{Intelligent Agent}
+
+\subsubsection{Deep Learning}
+
+
 
 \pagebreak
 
@@ -863,7 +909,7 @@ providing end users to directly order a cab. If you think about the experience
 from the taxi driver experience, their workload is totally automated. They are
 assigned rides by Uber's algorithm, which they just need to execute. Same goes
 with other kinds of contractor work, for instance
-\href{https://www.getbannerman.com/} {Bannerman} provides the ability to book
+\href{https://www.getbannerman.com/}{Bannerman} provides the ability to book
 security gards on demand, without the middle man.
 
 
@@ -1011,11 +1057,12 @@ industry will be impacted: industrial workers, office and administrative
 support, transportation, construction, etc.
 
 \smallskip
+
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.6]{jobs}
     \caption{\href{http://www2.deloitte.com/content/dam/Deloitte/uk/Documents/uk-futures/london-futures-agiletown.pdf}
-    {Study by Deloitte} on jobs in at risk from automation}}
+    {Study by Deloitte on jobs in at risk from automation}}
     \label{fig:deloitte}
 \end{figure}
 
@@ -1160,6 +1207,17 @@ level of students each year, so they can find a job.
   \href{http://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf}{link}
 
   \bibitem{Moravec} Hans Moravec, {\em Mind Children} - 1988
+
+  \bibitem{cloud} Schikuta, Mann,
+  \href{http://eprints.cs.univie.ac.at/3708/1/paper57.pdf}
+  {{\em A Cloud-Based Neural Network Simulation Environment}} - 2013
+
+  \bibitem{trainingData} Zhu, Vondrick, Ramanan, Fowlkes,
+  \href{http://web.mit.edu/vondrick/largetrain.pdf}
+  {Do We Need More Training Data or Better Models for Object Detection?} - 2012
+
+  \bibitem{moreData} Norvig, Halevy, {\em The Unreasonable Effectiveness of Data}
+  In IEEE Intelligent Systems, Vol 24 - 2009 
 
   \bibitem{RusselAI} Stuart Russel \& Peter Norvig
   {\em Artificial Intelligence - A Modern Approach, 3rd Edition} - 2010.
