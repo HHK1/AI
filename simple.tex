@@ -417,30 +417,52 @@ is $10^18$ flops. According to the moore's Law, this {\em should} happen around
     \label{fig:fartogo}
 \end{figure}
 
-power. The Tianhe-2 uses $24MW$ with its cooling system. The brain uses 20 W. One
-other promising lead is the parallelization of computing. Thanks to more and
+power. The Tianhe-2 uses $24MW$ with its cooling system. The brain uses 20 W.
+One other promising lead is the parallelization of computing. Thanks to more and
 more performant GPUs \footnote{Too make it simple, a GPU is capable of handling
 a large number of simple, parallel tasks.}, associated  with  the use of cloud
 computing \cite{cloud}, it helps training neural networks on large datasets.
 
-This access to better hardware, and more computing power partly explains the successes in
-Artificial Intelligence we're witnessing today. For tree exploration problems, like
-in chess, or in strategic planning, it allows the machine to evaluate the positions
-a bit deeper, making it possible to foresee more problems, or choose solutions were
-the reward is not immediate, but the final outcome better. And for neural networks,
-it allows researchers to build larger networks and better train them, with huge
-datasets.
+This access to better hardware, and more computing power partly explains the
+successes in Artificial Intelligence we're witnessing today. For tree
+exploration problems, like in chess, or in strategic planning, it allows the
+machine to evaluate the positions a bit deeper, making it possible to foresee
+more problems, or choose solutions were the reward is not immediate, but the
+final outcome better. Deep Blue's victory  over Kasparov has been criticized for
+being brute force rather than an improvement of the search algorithm. Regarding
+neural networks, it allows researchers to build larger networks and better train
+them, with huge datasets.
 
 \subsubsection{Access to big datasets}
 
 
 As a matter of fact, size of training data is important when it comes to
-training of neural networks. Simple models often perform better when trained on
-bigger datasets \cite{moreData} than complex models trained on much smaller
-sets. The N-gram models, which is used notably in Natural Language Processing,
-is a simple model that looks at N words at a time, and check if those words form
-a correct sentence. It can be trained on very large datasets, almost all data
-available; which is about trillions of words. \cite{ngram}.
+training of neural networks. We said in the first part that neural networks were
+inspired by the network structure of neurones in the brain, but did not give a
+definition of \gls{neuralLabel}. A neural network is a class of statistical
+functions, that contains processing units, called neurones, linked together by
+adaptative wheights, that are adjusted with the help of a learning algorithm.
+The input neurones are linked to output neurones, traversing one or more hidden
+layers of neurone. We find various models of neural networks, depending on the
+overall  structure, the way neurone are connected to each others, the size of
+the networks and the way the network is learning its parameters.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ann}
+    \caption{A simple representation of an artificial neural network}
+    \label{fig:ann}
+\end{figure}
+
+
+
+Simple models often perform better when trained on bigger datasets
+\cite{moreData} than complex models trained on much smaller sets. The N-gram
+models, which is used notably in Natural Language Processing, is a simple model
+that looks at N words at a time, and check if those words form a correct
+sentence. It can be trained on very large datasets of sentences. It can
+virtually be trained on all data available in this domain, which is about
+trillions of words \cite{ngram}.
 
 This is also true in image classification. Large and high-quality datasets of
 millions of image are available to train the latest algorithm in image
@@ -449,19 +471,34 @@ explosion of data in many fields.
 
 However, adding always more data may not result in better results. For certain
 models, it can harm the predictive power of the network if the data is too noisy
-or unlabeled. \cite{trainingData} Moreover, in certain domain like speech recognition,
-the size of high-quality annotated speech retranscription is fairly low, only just
-millions of word.
-
-Thus, more complex models are needed in order to improve quality of the results.
-Those models 
-
-%Explosion of data. Give size of used samples over the time for various data
-
-%Models are better when trained on bigger datasets. Give examples
+or unlabeled. \cite{trainingData} Moreover, in certain domain like speech
+recognition, the size of high-quality annotated speech retranscription is fairly
+low, only just millions of word. Thus, more complex models are needed in order
+to improve quality of the results.
 
 
 \subsubsection{Progress in Models}
+
+The progresses made in machine learning techniques and model are also
+responsible for the last progresses we're witnessing. The backpropagation
+algorithm, is a method to train neural networks in supervised learning, where
+the desired outputs are known.\footnote{It can also be applied to some
+unsupervised learning examples, which aims at finding unknown patterns in the
+data.} It was first published in 1969 \cite{backpropagation}, and was applied to
+the field of neural networks only in 1974 and later, before becoming one of the
+most used technique to train neural networks. \footnote{\lq The most popular
+method for learning in multilayer networks is called Back-propagation. It was
+first invented in 1969 by Bryson and Ho, but was largely ignored until the
+mid-1980s.\rq  \cite{RusselAI}}
+
+We've seen that neural network can have one or more hidden layers. When each
+hidden layer is used as the input layer for the next one, we can talk about
+feedforward neural networks: There is no loop or cycle in the network. On the
+contrary, reccurrent neural network do present such loops. A neural network
+will be qualified deep if it has more than two layers of non-linear neurons.
+Deep learning has been highly popular recently, but it has been around since the late
+80's. Yann LeCun sucessfully applied the backpropagation algorithm to deep neural
+networks in 1989, in order to recognize handwritten zip Codes. \cite{lecun}
 
 
 
@@ -476,6 +513,9 @@ solving problems by exploring a space of states
 Different exploration methods
 state evaluation with heuristics specific to the problem
 Test to se if the state is a goal state
+
+
+
 
 Constraint solving problems : more general
 exemple of sudoku
@@ -1187,47 +1227,52 @@ level of students each year, so they can find a job.
 \begin{thebibliography}{40}
 
   \bibitem{seq2seq} Oriol Vinyal \& Quoc V. Le,
-  {\em A Neural Conversation Model}, Google - June 2015
+  {\em A Neural Conversation Model}, Google - June 2015.
 
-  \bibitem{Turing} Alan Turing, {\em The Imitation Game} - 1950
+  \bibitem{Turing} Alan Turing, {\em The Imitation Game} - 1950.
 
-  \bibitem{Kurzweil} Ray Kurzweil, {\em The Singularity is near} - 2005
+  \bibitem{Kurzweil} Ray Kurzweil, {\em The Singularity is near} - 2005.
 
-  \bibitem{Good} Irving J. Good, {\em Advances in Computers, Vol 6} - 1965
+  \bibitem{Good} Irving J. Good, {\em Advances in Computers, Vol 6} - 1965.
 
   \bibitem{ChineseRoom} John Searle, {\em Minds, Brains, and Programs},
-  Behavioral and Brain Sciences - 1980
+  Behavioral and Brain Sciences - 1980.
 
   \bibitem{Atari} DeepMind Technologies, {\em Playing Atari with Deep
-  Reinforcement Learning} - 2015
+  Reinforcement Learning} - 2015.
 
   \bibitem{DartMouth} McCarthy, Minsky, Rochester, Shannon, {\em
   A proposal for the Dartmouth Summer Research Project on Artificial
-  Intelligence} - August 1955
+  Intelligence} - August 1955.
 
   \bibitem{Turing1936} Alan Turing, {\em On computable Numbers, with an
   application to the Entscheidungsproblem} - 1936 \\
-  \href{http://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf}{link}
+  \href{http://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf}{link}.
 
-  \bibitem{Moravec} Hans Moravec, {\em Mind Children} - 1988
+  \bibitem{Moravec} Hans Moravec, {\em Mind Children} - 1988.
 
   \bibitem{cloud} Schikuta, Mann,
   \href{http://eprints.cs.univie.ac.at/3708/1/paper57.pdf}
-  {{\em A Cloud-Based Neural Network Simulation Environment}} - 2013
+  {{\em A Cloud-Based Neural Network Simulation Environment}} - 2013.
 
   \bibitem{trainingData} Zhu, Vondrick, Ramanan, Fowlkes,
   \href{http://web.mit.edu/vondrick/largetrain.pdf}
-  {Do We Need More Training Data or Better Models for Object Detection?} - 2012
+  {Do We Need More Training Data or Better Models for Object Detection?} - 2012.
 
   \bibitem{moreData} Norvig, Halevy, {\em The Unreasonable Effectiveness of Data}
-  In IEEE Intelligent Systems, Vol 24 - 2009
+  In IEEE Intelligent Systems, Vol 24 - 2009.
 
   \bibitem{ngram} Brants, Popat, Xu, Och, Dean. {\em Large language models in machine
-  translation.}, 2007
+  translation}, 2007.
+
+  \bibitem{backpropagation} Arthur Earl Bryson, Yu-Chi Ho
+  {\em Applied optimal control: optimization, estimation, and control} - 1969.
 
   \bibitem{RusselAI} Stuart Russel \& Peter Norvig
   {\em Artificial Intelligence - A Modern Approach, 3rd Edition} - 2010.
 
+  \bibitem{lecun} LeCun,
+  {\em Backpropagation Applied to Handwritten Zip Code Recognition} - 1989.
 
 \end{thebibliography}
 
