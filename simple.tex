@@ -498,16 +498,20 @@ contrary, reccurrent neural network do present such loops. A neural network
 will be qualified deep if it has more than two layers of non-linear neurons.
 Deep learning has been highly popular recently, but it has been around since the late
 80's. Yann LeCun sucessfully applied the backpropagation algorithm to deep neural
-networks in 1989, in order to recognize handwritten zip Codes. \cite{lecun}
-
-
-
+networks in 1989, in order to recognize handwritten zip Codes \cite{lecun}.
+However the network was pretty long to train (about 3 days), and the lack of computing
+power was one of the reason it took some time to become popular. It is now
+used in domains such as image and speech recognition, as well as NLP.
 
 
 
 \pagebreak
 
 \subsection{Modern Models and their applications}
+
+There are a various number of models in artificial intelligence and machine learning,
+and they are elvoving at a fast pace. Thus, we decided to describe only a handful
+of them, and not to overwhelm the reader with technicalities.
 
 solving problems by exploring a space of states
 Different exploration methods
@@ -524,7 +528,58 @@ knowledge based agents: get a representation of the world
 
 \subsubsection{Intelligent Agent}
 
+The intelligent Agent paradigm is pretty recent in the history of Artificial
+intelligence. It started to be accepted in the late 90's and was popularized by
+Norvig and Russel \cite{RusselAI}.
+
+The
+
 \subsubsection{Deep Learning}
+
+We've already defined what deep neural networks was in the last section, neural
+networks with 2 or more hidden layers. Deep learning refers to the use of such
+networks in machine learning. Something important about Deep Learning is that
+each layer get to have a certain representation of the data being learn. The
+data is a composition of multiple factors, each factor being learned by a layer
+in the  network. This can be particularly well observed in image recognition,
+and was  recently demonstrated by Google in an attempt to better understand
+neural networks:
+\footnote{\href{http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html}
+{Going Deeper into Neural Networks}}
+
+\begin{quote}
+  One of the challenges of neural networks is understanding what exactly goes on
+  at each layer. We know that after training, each layer progressively extracts
+  higher and higher-level features of the image, until the final layer
+  essentially makes a decision on what the image shows. For example, the first
+  layer maybe looks for edges or corners. Intermediate layers interpret the
+  basic features to look for overall shapes or components, like a door or a
+  leaf. The final few layers assemble those into complete interpretations—these
+  neurons activate in response to very complex things such as entire buildings
+  or trees.
+\end{quote}
+
+They managed to extract images from neural networks trained to classify images, by
+giving them images of random noise and transforming them into what the network
+consider to be a certain object. The figure \ref{fig:classvis} shows some example of
+such image generation.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{classvis}
+    \caption{Different classes of objects seen by a deep neural network}
+    \label{fig:classvis}
+\end{figure}
+
+This gives insight on what the network actually learn, checking for learning errors
+and gaining a better understanding on what's happening in the hidden layers.
+
+They also fed images to the network, and extracted what was perceived in a
+specific layer, amplifying what was detected. Low level layers amplify generic
+features such as edges, contrasts or color-clusters. High-level layers have much
+more precise representation of objects and complex features.
+
+By
 
 \subsubsection{Word Vectors}
 
