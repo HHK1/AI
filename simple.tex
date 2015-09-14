@@ -504,7 +504,6 @@ power was one of the reason it took some time to become popular. It is now
 used in domains such as image and speech recognition, as well as NLP.
 
 
-
 \pagebreak
 
 \subsection{Modern Models and their applications}
@@ -612,6 +611,7 @@ available.
 
 \subsubsection{Word Vectors}
 
+Words Vector
 
 
 \pagebreak
@@ -1177,10 +1177,34 @@ business and pricing models.
 
 \subsection{Technical limitations}
 
+\subsubsection{Limits in models}
+
+Though some impressive results have recently been achieved with deep neural
+networks, there are still hard to train, and fine tuning the wheights and
+parameters between the unit of the network is more of an art than a science.
+When applied to image recognition, it is possible to visualize what are the
+different features learned by the layers of the network, but is is hardly the
+case with speech recognition and natural language processing.
+
+Moreover, some limitations has been discovered in deep neural networks
+\cite{deepLimits}. It is possible to slightly alter a image that is correctly
+classified by a network, so that the two images are indistinguishable to the
+human eye, but differ in classification for the network.
+
+
 \subsubsection{Computing limitations}
 
-
-\subsubsection{Lack of data}
+We've seen that hardware progress was responsible for some of the major
+progresses  made recently. However, we're still far behind the capacity of human
+brain in terms of computing power, as the fastest computer in the world is
+equivalent to $1\%$ of  our brain. There are some concerns on the power required
+to run those machines,  compared to our brain running on only $20 W$. Some
+attempts have been made at creating efficient low-energy computer, notably by
+Pr. Kwabena Boahen at Stanford. He created a computer mimicking the brain made
+of 16 Neurocore, each costing about \$40000,  resulting in a something \lq 9,000
+times faster and using significantly less power than a typical PC\rq.
+\footnote{\href{http://news.stanford.edu/news/2014/april/neurogrid-boahen-engineering-042814.html}{Stanford
+bioengineers create circuit board modeled on the human brain }}
 
 \subsection{AI represents a major challenge for startups and for the society}
 
@@ -1334,7 +1358,7 @@ change will probably take dozens  of year to happen for real.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{thebibliography}{40}
+\begin{thebibliography}{20}
 
   \bibitem{seq2seq} Oriol Vinyal \& Quoc V. Le,
   {\em A Neural Conversation Model}, Google - June 2015.
@@ -1383,6 +1407,12 @@ change will probably take dozens  of year to happen for real.
 
   \bibitem{lecun} LeCun,
   {\em Backpropagation Applied to Handwritten Zip Code Recognition} - 1989.
+
+  \bibitem{wordVec} Mikolov, Chen, Corrado, Dean,
+  {\em Efficient Estimation of Word Representations in Vector Space} - 2013.
+
+  \bibitem{deepLimits} Zaremba, \href{http://cs.nyu.edu/~zaremba/docs/understanding.pdf}
+  {{\em Intriguing properties of neural networks}} - 2013.
 
 \end{thebibliography}
 
