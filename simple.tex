@@ -7,7 +7,7 @@
 
 \graphicspath{ {images/} }
 
-\title{Artifical Intelligence}
+\title{Artificial Intelligence}
 \author{
         Henry Huck \\
         Master Specialisé - HEC \\
@@ -267,9 +267,6 @@ scientists of IBM. It was held at Dartmouth College, and the scientists
 attending the project were to become major authors and influencers for the
 decades to come. \cite{DartMouth}\\
 
-\subsubsection{First successes}
-
-
 The early programs used what is essentially a tree exploration program. For a maze
 exploration, or a proof of a theorem, the algorithm is simply moving forward the
 possibilities, turning back when it reaches a dead end, or abandonning a whole
@@ -279,7 +276,7 @@ problems, the search space would simply explode making it impossible to explore.
 The idea was then to estimate sub-goals thanks to heuristics functions specific to
 each problem.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{chess-tree}
     \caption{A chess exploration tree}
@@ -385,7 +382,7 @@ is known as the Moore's Law. It states that the number of transistor on dense
 integrated circuits double every two years. Hence, it can be approximately said
 that the computational power available at a given price double every two years.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{moore}
     \caption{Moore's Law}
@@ -410,7 +407,7 @@ estimate that we would need a super computer with a speed in the exaflops, which
 is $10^18$ flops. According to the moore's Law, this {\em should} happen around
 2020.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{fartogo}
     \caption{When will super computer be equivalent to human brain ?}
@@ -447,7 +444,7 @@ layers of neurone. We find various models of neural networks, depending on the
 overall  structure, the way neurone are connected to each others, the size of
 the networks and the way the network is learning its parameters.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{ann}
     \caption{A simple representation of an artificial neural network}
@@ -581,7 +578,7 @@ giving them images of random noise and transforming them into what the network
 consider to be a certain object. The figure \ref{fig:classvis} shows some example of
 such image generation.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{classvis}
     \caption{Different classes of objects seen by a deep neural network}
@@ -600,9 +597,9 @@ They also used this in order to generate image by recursively feeding the networ
 an image, and selecting specific layers to amplify the results. The code for this
 software, called deep dream, has been made public and a wide range of example are
 available.
-\footnote{\href{https://twitter.com/search?q=\%23deepdream&src=tyah\&lang=en}{Search #DeepDream on twitter}}
+\footnote{\href{https://twitter.com/search?q=\%23deepdream&src=tyah\&lang=en}{Search DeepDream on twitter}}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{deepdream}
     \caption{An image recursively generated from random noise on a neural network trained on architecture images}
@@ -611,7 +608,32 @@ available.
 
 \subsubsection{Word Vectors}
 
-Words Vector
+Word vector is a technique used to represent a set of words, or vocabulary, into
+vectors. Some very interesting properties are captured into those vectors.
+
+The first immediate result is that similar word tend to be clustered together:
+Words which are semantically close end up to be close in the space of vectors.
+\footnote{The popular \href{https://code.google.com/p/word2vec/}{word2Vec} tool provided by google gives some examples.}
+Checking the closest neighbours of the word France will output a list of european
+coutries, the first being neighbouring countries of France.
+
+Another, less immediate result, is that it captures linguistics regularities
+\cite{continuousWordVec}. The representation in term of vectors allows to make
+some linear operations on the vector representations of words. For example,
+the vector : $vec(King) - vec(Man) + vec(Woman)$ will be very close to the vector
+representation of the word \lq Queen\rq. The figure
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{vectors}
+    \caption{Example of word pairs relationship. From {\em Efficient Estimation of Word Representations in
+    Vector Space} \cite{wordVec}}
+    \label{fig:wordpair}
+\end{figure}
+
+Word vectors need to be of high quality in order to be used in real world applications.
+It has been used to improve machine translation \cite{translation}, and in sentiment analysis, which aims
+at extracting subjective informations from the source.\cite{sentiment}
 
 
 \pagebreak
@@ -674,7 +696,7 @@ the environment around the car.
 
 \smallskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{car-diagram}
     \caption{A chess exploration tree}
@@ -696,7 +718,7 @@ of how the car perceives its environment and can make decisions.
 
 \smallskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{google-car}
     \caption{How the Google car perceives its environment.
@@ -746,7 +768,7 @@ parks their car, a self-driving car could be on the road almost 24/7.
 
 \medskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{vehicle-cost}
     \caption{Cost of a car per mile for different scenario}
@@ -762,12 +784,12 @@ internet as if they were at home. The car has been driving around San Francisco
 this year.
 
 \smallskip
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{mercedes}
     \caption{\href{http://www.entrepreneur.com/article/243751}
     {Mercedes Benz F 015 A driving living room}}
-    \label{fig:cost_of_car}
+    \label{fig:mercedesBenz}
 \end{figure}
 
 \smallskip
@@ -913,11 +935,11 @@ can display any piece of information about a prospect.
 
 \smallskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{salesforce}
     \caption{Salesforce's prospect interface}
-    \label{fig:cost_of_car}
+    \label{fig:salesforce}
 \end{figure}
 
 \smallskip
@@ -958,7 +980,7 @@ according to the content of the message.
 
 \smallskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{zendesk}
     \caption{Gorgias can suggest the right canned response to a message}
@@ -1028,12 +1050,12 @@ intervention once they work. Octobat automatically invoices the customers
 according to the payments which were made or which are scheduled in Stripe.
 Baremetrics does the reporting out of the box.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{baremetrics}
     \caption{Baremetrics provides business analytics out of the box for the
     company manager to monitor progress.}
-    \label{fig:uber-graph}
+    \label{fig:baremetrics}
 \end{figure}
 
 \smallskip
@@ -1063,7 +1085,7 @@ with other kinds of contractor work, for instance
 security gards on demand, without the middle man.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.8]{uber-graph}
     \caption{Uber's traffic predictions}
@@ -1106,7 +1128,7 @@ to activate a service on Segment for the data to be shared. It's that easy.
 
 \smallskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{segment}
     \caption{Services like Segment share data among all software a company has.}
@@ -1191,6 +1213,14 @@ Moreover, some limitations has been discovered in deep neural networks
 classified by a network, so that the two images are indistinguishable to the
 human eye, but differ in classification for the network.
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[[width=0.7\textwidth]{adversarial2}
+    \caption{Left is the correctly prediced image. In the center is the difference
+    between the two images, magnified by 10X.}
+    \label{fig:adverserial}
+\end{figure}
+
 
 \subsubsection{Computing limitations}
 
@@ -1233,7 +1263,7 @@ support, transportation, construction, etc.
 
 \smallskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.6]{jobs}
     \caption{\href{http://www2.deloitte.com/content/dam/Deloitte/uk/Documents/uk-futures/london-futures-agiletown.pdf}
@@ -1323,7 +1353,7 @@ level of students each year, so they can find a job.
 \section*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
-While reading through articles & papers about the progress of AI, we can
+While reading through articles and papers about the progress of AI, we can
 conclude  that there's definitely a rising interest for it. This interest comes
 from the  acceleration of AI progress, that was enabled by advancement in the
 models, in  computing power and by the growing amount of data that can be
@@ -1351,9 +1381,9 @@ change will probably take dozens  of year to happen for real.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Glossary  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\printglossaries
-
-\pagebreak
+% \printglossaries
+%
+% \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1413,6 +1443,14 @@ change will probably take dozens  of year to happen for real.
 
   \bibitem{deepLimits} Zaremba, \href{http://cs.nyu.edu/~zaremba/docs/understanding.pdf}
   {{\em Intriguing properties of neural networks}} - 2013.
+
+  \bibitem{continuousWordVec} T. Mikolov, W.T. Yih, G. Zweig.
+  {\em Linguistic Regularities in Continuous Space Word Representations.} - 2013.
+
+  \bibitem{translation} T. Mikolov, Q.V. Le, I. Sustkever,
+  {\em Exploiting Similarities among Languages for Machine Translation} - 2013.
+
+  \bibitem{sentiment} A. Maas, R. Daly, P.T. Pham, D. Huang, {\em Learning Word Vectors for Sentiment Analysis} - 2011.
 
 \end{thebibliography}
 
