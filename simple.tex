@@ -510,29 +510,47 @@ used in domains such as image and speech recognition, as well as NLP.
 \subsection{Modern Models and their applications}
 
 There are a various number of models in artificial intelligence and machine learning,
-and they are elvoving at a fast pace. Thus, we decided to describe only a handful
-of them, and not to overwhelm the reader with technicalities.
-
-solving problems by exploring a space of states
-Different exploration methods
-state evaluation with heuristics specific to the problem
-Test to se if the state is a goal state
-
-
-
-
-Constraint solving problems : more general
-exemple of sudoku
-
-knowledge based agents: get a representation of the world
+and they are elvoving at a fast pace. Thus, we decided first to describe what a learning
+agent is giving a general idea of what a IA software is, and then give a few
+example of some recent models without entering in too much technicalities.
 
 \subsubsection{Intelligent Agent}
 
 The intelligent Agent paradigm is pretty recent in the history of Artificial
 intelligence. It started to be accepted in the late 90's and was popularized by
-Norvig and Russel \cite{RusselAI}.
+Norvig and Russel \cite{RusselAI}. It is an attempt to encapsulate the various
+problems encountered in Artificial Intelligence, from Graph exploration problems
+like in chess, to the automated driving of a car. Thus, it defines Artificial
+Intelligence as the study of intelligent agents.
 
-The
+ \lq An agent is something that perceives and acts in an environment. The agent
+function for an agent specifies the action taken by the agent in response to
+any percept sequence \cite{RusselAI} .\rq The environnment as well as the agent
+vary in form and complexity. Simple reflex agent, using defined if-then rules to
+perform their actions will therefore be considered \lq intelligent\rq. Environnments
+can be extremely simple: a space of discrete positions for a player in a maze,
+or very complex: a car evolving in the real world.
+
+Intelligent agents can be classified in distincts categories:
+
+\begin{itemize}
+  \item Reflex Agents
+  \item Model Based Agents
+  \item Goal Based Agents
+  \item Utility Based Agents
+  \item Learning Agents
+\end{itemize}
+
+A model base agent will maintain a certain structure of its observable
+environnement, giving it more complexity than the reflex agent which does not
+store anything about it. The goal based agent builds upon the model agent, but
+tries to reach a certain goal (For example: Finding the exit of a maze, or
+defeating the adversary in a Chess game), while the utility based agent is
+optimizing a certain utility function along the path of its actions
+\footnote{Utility functions come from the world of economics, and map states of
+the world to a certain utility, giving a measure of the happiness of the agent}.
+Finally, learning agents will explore their environnment, and improve their
+actions  by learning of their mistakes.
 
 \subsubsection{Deep Learning}
 
@@ -579,9 +597,22 @@ specific layer, amplifying what was detected. Low level layers amplify generic
 features such as edges, contrasts or color-clusters. High-level layers have much
 more precise representation of objects and complex features.
 
-By
+They also used this in order to generate image by recursively feeding the network with
+an image, and selecting specific layers to amplify the results. The code for this
+software, called deep dream, has been made public and a wide range of example are
+available.
+\footnote{\href{https://twitter.com/search?q=\%23deepdream&src=tyah\&lang=en}{Search #DeepDream on twitter}}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{deepdream}
+    \caption{An image recursively generated from random noise on a neural network trained on architecture images}
+    \label{fig:deepdream}
+\end{figure}
 
 \subsubsection{Word Vectors}
+
+
 
 \pagebreak
 
@@ -1147,15 +1178,7 @@ business and pricing models.
 \subsection{Technical limitations}
 
 \subsubsection{Computing limitations}
-Today, the best computer in the world, \href{http://www.reuters.com/article/2014/11/17/us-china-supercomputer-idUSKCN0J11VV20141117}{China's Tianhe-2} 
-has reached the human-level of calculations per seconds (cps). Tianhe-2 can do 
-34 quadrillion cps, whereas the human brain is limited to 10 quadrillion cps.
-Though, it costs 390 million dollar, and takes 700 square meeters of space.
-According to Moore's law, one can expect a \$1000 computer to reach the 
-human level of cps within ten years. If Moore's law proves right, we can 
-expect a human level computer to be affordable by 2025. That would provide 
-appropriate resources to build an AI. Though it remains hypotheses for the 
-moment.
+
 
 \subsubsection{Lack of data}
 
@@ -1276,29 +1299,27 @@ level of students each year, so they can find a job.
 \section*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
-While reading through articles & papers about the progress of AI, we can conclude 
-that there's definitely a rising interest for it. This interest comes from the 
-acceleration of AI progress, that was enabled by advancement in the models, in 
-computing power and by the growing amount of data that can be collected. This 
-progress is starting to impact the entrepreneurial ecosystem. Software is 
-changing thanks to machine learning as it did thanks to the cloud. This impact
-is going to change the way society works, especially in regards to the 
-importance we attribute to work. 
+While reading through articles & papers about the progress of AI, we can
+conclude  that there's definitely a rising interest for it. This interest comes
+from the  acceleration of AI progress, that was enabled by advancement in the
+models, in  computing power and by the growing amount of data that can be
+collected. This  progress is starting to impact the entrepreneurial ecosystem.
+Software is  changing thanks to machine learning as it did thanks to the cloud.
+This impact is going to change the way society works, especially in regards to
+the  importance we attribute to work.
 
-Though, we're still very far from artificial general intelligence. First, the 
-computing power available is not powerful enough. Second, the models we have 
-are showing their limits. In spite of the enthusiasm there is around AI, we 
-need to bare in mind that superintelligence won't become a reality for years, 
-and we may even never reach it. Most companies selling commercial AI products 
-are applying Machine Learning models to narrow industries, hard AI, for the 
-moment, is only mentioned in scientific papers and has no impact on the 
-entrepreneurial ecosystem. 
-The Turing test has not been passed by a machine for the last 50 years, and 
-is not likely to be passed soon. AI will most likely lead to a revolution in the 
-way we live, and it's likely that it will start impacting our lives through 
-startups. We just need to bare in mind that this change will probably take dozens 
-of year to happen for real. 
-
+Though, we're still very far from artificial general intelligence. First, the
+computing power available is not powerful enough. Second, the models we have
+are showing their limits. In spite of the enthusiasm there is around AI, we
+need to bare in mind that superintelligence won't become a reality for years,
+and we may even never reach it. Most companies selling commercial AI products
+are applying Machine Learning models to narrow industries, hard AI, for the
+moment, is only mentioned in scientific papers and has no impact on the
+entrepreneurial ecosystem.  The Turing test has not been passed by a machine for
+the last 50 years, and  is not likely to be passed soon. AI will most likely
+lead to a revolution in the  way we live, and it's likely that it will start
+impacting our lives through  startups. We just need to bare in mind that this
+change will probably take dozens  of year to happen for real.
 
 
 \pagebreak
