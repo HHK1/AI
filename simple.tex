@@ -32,6 +32,7 @@
 \newglossaryentry{neuralLabel}
 {
   name={Neural Network},
+  %% TODO ??
   description={is fairly complex}
 }
 
@@ -404,7 +405,7 @@ to simulate the brain activity during one second. This does not give us the
 processing speed of a human brain, and does not allow to compared directly the
 brain to those computer in term of raw power, but we can extrapolate, and
 estimate that we would need a super computer with a speed in the exaflops, which
-is $10^18$ flops. According to the moore's Law, this {\em should} happen around
+is $10^{18}$ flops. According to the moore's Law, this {\em should} happen around
 2020.
 
 \begin{figure}[ht]
@@ -414,7 +415,9 @@ is $10^18$ flops. According to the moore's Law, this {\em should} happen around
     \label{fig:fartogo}
 \end{figure}
 
-power. The Tianhe-2 uses $24MW$ with its cooling system. The brain uses 20 W.
+%% moved later
+%% power. The Tianhe-2 uses $24MW$ with its cooling system. The brain uses 20 W.
+
 One other promising lead is the parallelization of computing. Thanks to more and
 more performant GPUs \footnote{Too make it simple, a GPU is capable of handling
 a large number of simple, parallel tasks.}, associated  with  the use of cloud
@@ -483,7 +486,9 @@ the desired outputs are known.\footnote{It can also be applied to some
 unsupervised learning examples, which aims at finding unknown patterns in the
 data.} It was first published in 1969 \cite{backpropagation}, and was applied to
 the field of neural networks only in 1974 and later, before becoming one of the
-most used technique to train neural networks. \footnote{\lq The most popular
+most used technique to train neural networks.
+%% redondant avec le texte
+\footnote{\lq The most popular
 method for learning in multilayer networks is called Back-propagation. It was
 first invented in 1969 by Bryson and Ho, but was largely ignored until the
 mid-1980s.\rq  \cite{RusselAI}}
@@ -620,8 +625,10 @@ coutries, the first being neighbouring countries of France.
 Another, less immediate result, is that it captures linguistics regularities
 \cite{continuousWordVec}. The representation in term of vectors allows to make
 some linear operations on the vector representations of words. For example,
-the vector : $vec(King) - vec(Man) + vec(Woman)$ will be very close to the vector
-representation of the word \lq Queen\rq. The figure
+the vector : $\vec{\textbf{King}} - \vec{\textbf{Man}} + \vec{\textbf{Woman}}$ will be very close to the vector
+representation of the word \lq Queen\rq.
+%%%  ???
+%%% The figure
 
 \begin{figure}[ht]
     \centering
@@ -699,7 +706,7 @@ the environment around the car.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{car-diagram}
-    \caption{A chess exploration tree}
+    \caption{A self-driving car and its sensors}
     \label{fig:car}
 \end{figure}
 
@@ -707,9 +714,9 @@ the environment around the car.
 
 Second, the car includes a powerful computer to analyze all these parameters
 and actually \lq drive\rq the car. Let's take the example of Google's software
-called \lq Chauffeur \rq . It's composed of two parts. One is hardcoded
+called \lq Chauffeur \rq . It's composed of two parts. One is hard-coded
 (road signs, traffic lights colors), and one is a learning part. Every mile is
-logged and provides additionnal data on how the car should drive itself.
+logged and provides additional data on how the car should drive itself.
 Therefor, the car is able to predict the behavior of surrounding elements
 (both car, bikes, pedestrians). Such things are based on \gls{neuralLabel} being
 fed with the driving data of million of other cars
@@ -729,10 +736,10 @@ of how the car perceives its environment and can make decisions.
 
 \smallskip
 
-\paragraph{Car industry discruption}
+\paragraph{Car industry disruption}
 
-The disruption is happening at several levels: some startups are building addons
-to current cars, so they can get self-driving functionnalities. For instance,
+The disruption is happening at several levels: some startups are building add-ons
+to current cars, so they can get self-driving functionalities. For instance,
 a Californian company called Cruise
 \footnote{\href{http://www.getcruise.com}{Cruise Website}}
 enhances a car's capabilities by seamlessly integrating self-driving car
@@ -752,9 +759,9 @@ about Tesla building such cars. \footnote{\href{http://my.teslamotors.com/fr_CH/
 would be willing to provide Uber with self-driving cars, and declined to answer.
 Many reporters concluded that Tesla will likely be the first company to sell
 autonomous cars, that were built in-house. Similar to Tesla, there could be new
-car giants rising by leverging the opportunity to build both a new type of car
+car giants rising by leveraging the opportunity to build both a new type of car
 and a powerful self-driving technology. \footnote{\href{http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/}
-{Five reasons why automakers should fear Google's driverless car}}
+{Five reasons why automakers should fear Google's driver less car}}
 
 Finally, the most ambitious model is probably the one by Uber. The idea behind
 it is that using UberX costs about \$ 2.15 per mile (source: AKA research).
@@ -779,8 +786,8 @@ parks their car, a self-driving car could be on the road almost 24/7.
 
 No matter who's leading that change, it's likely that our own definition of the
 car is going to change. Mercedes has shown an example of a car being similar to
-a living room: the Mercedes-Benz F 015. Travellers could sleep, chat, browse the
-internet as if they were at home. The car has been driving around San Francisco
+a living room: the Mercedes-Benz F 015. Travelers could sleep, chat, browse the
+Internet as if they were at home. The car has been driving around San Francisco
 this year.
 
 \smallskip
@@ -804,7 +811,7 @@ well, and moved to non-residential areas.
 
 The speech recognition movement has been initiated to the large public with a
 startup bought by Apple, Siri. This startup was initiated a DARPA project as
-well named CALO. Essentially, it works by transcripting speech to text, and then
+well named CALO. Essentially, it works by transcribing speech to text, and then
 parses the text to perform actions. Google has launched a similar service called
 Google now. Both these system can perform actions based on the user's speech.
 This technology enables the user to perform actions on the service of his
@@ -965,7 +972,7 @@ regards to what to do to reach their goal.
 
 \paragraph{Smart interfaces}
 
-First, the user experience. We've seen that the interace of the current SaaS is
+First, the user experience. We've seen that the interface of the current SaaS is
 usually crowded. That negatively impacts the productivity of the user, because
 they need to find the right piece of information they need among a ton of pieces
 of information. How could that be easier. Let's take the example of Zendesk,
@@ -1013,8 +1020,8 @@ to the customer. A good example of it is identifying that a customer is ready to
 buy. A few SaaS services already provide that kind of intelligence:
 \href{http://www.gainsight.com/}{Gainsight} and
 \href{http://uk.insidesales.com/}{Insidesales} are good examples of it.
-The main challenge they have is that they work as plugings. Therefore, their
-service is great, but cannot imapct the user experience of the sales person
+The main challenge they have is that they work as plugins. Therefore, their
+service is great, but cannot impact the user experience of the sales person
 inside Salesforce for instance.
 We can expect the next move in that sphere to be for Salesforce to integrate
 those capabilities. There are actually two ways to integrate them. The first
@@ -1023,7 +1030,7 @@ pieces of information / those suggestion of actions. The second is to integrate
 them in the user flow. Let say a user needs to send an invoice to a customer on
 a monthly. Salesforce could identify this, and figure out that customers who
 receive also stats usage while getting the invoice are less likely to churn. In
-that case, the software could suggest to not only send the invoice, but aslo
+that case, the software could suggest to not only send the invoice, but also
 send monthly usage statistics along with it, in the click of a button.
 It's likely that unifying the user flow, which means the current course of
 actions the user takes in Salesforce, and the suggestions from machine learning
@@ -1138,14 +1145,14 @@ to activate a service on Segment for the data to be shared. It's that easy.
 \smallskip
 
 We can expect to see similar services at the scope of the whole company. Think
-about the ability for a software not only tohave access to any piece of
+about the ability for a software not only to have access to any piece of
 information about users or about the business, but also to be able to perform
 actions in third parties. Today, we're at the information sharing step, but soon
 we'll reach the latter. Once it's possible to both share information and perform
 actions (e.g. offer them a refund after they experience a bug or raise a
 complaint), we'll reach one step further in the fully automated software
 company. The human work may then focus on the creativity aspect of it, while it
-will be possible to fully autoamte the operational side of things.
+will be possible to fully automate the operational side of things.
 
 \subsubsection{A shift in pricing and business models}
 The current business models in the startup ecosystem are the following:
@@ -1166,11 +1173,11 @@ The current business models in the startup ecosystem are the following:
  In the last 10 years, we've seen a strong shift from upfront cost to monthly
 subscription \& usage fee. A good example of is the Adobe suite. It was priced
 per version until 2013 when they started charging per month, shifting to a SaaS
-business model. The latter (subscription and usage fee) are alligned to the
+business model. The latter (subscription and usage fee) are aligned to the
 payer's interest: you pay as you use the service, which means you pay as you
 get value from it. These two models tend to be ideal because of the mere fact
-that they are alligned with the user's interest. One can note that usage fee is
-the best alligned of the two, and therefor the one companies favor. The
+that they are aligned with the user's interest. One can note that usage fee is
+the best aligned of the two, and therefor the one companies favor. The
 challenge is that to price your service according to usage, you need to show
 that usage directly impacts the customer's interest. Let's take the example of
 a recruiting platform. Some companies like Job boards enable you to post a
@@ -1180,11 +1187,11 @@ right person for that job, not to post the listing. As software gets better,
 and as automation and communication between pieces of software increases, it
 will become easier to evaluate the performance of this job listing by the
 quality of applicants to that jobs. Therefore, the model will change from
-subscription to usage fee, where the usage is alligned with the benefit you
+subscription to usage fee, where the usage is aligned with the benefit you
 expect from the service. All this suggests that services like recruiting will
 be split into smaller services (job broadcasting, candidate screening with
 machine learning) that will enable to price based on what's considered has
-performance, in that example succesfully hire someone. We can expect the
+performance, in that example successfully hire someone. We can expect the
 general trend of having software automatically performing tasks and of
 providing objective stats on its performance to lead to more customer-driven
 business and pricing models.
@@ -1202,7 +1209,7 @@ business and pricing models.
 \subsubsection{Limits in models}
 
 Though some impressive results have recently been achieved with deep neural
-networks, there are still hard to train, and fine tuning the wheights and
+networks, there are still hard to train, and fine tuning the weights and
 parameters between the unit of the network is more of an art than a science.
 When applied to image recognition, it is possible to visualize what are the
 different features learned by the layers of the network, but is is hardly the
@@ -1216,8 +1223,8 @@ human eye, but differ in classification for the network.
 \begin{figure}[ht]
     \centering
     \includegraphics[[width=0.7\textwidth]{adversarial2}
-    \caption{Left is the correctly prediced image. In the center is the difference
-    between the two images, magnified by 10X.}
+    \caption{Left is the correctly classified image. In the center is the difference
+    between the two images, magnified by 10X. Right is the miss-classified image. }
     \label{fig:adverserial}
 \end{figure}
 
@@ -1228,7 +1235,9 @@ We've seen that hardware progress was responsible for some of the major
 progresses  made recently. However, we're still far behind the capacity of human
 brain in terms of computing power, as the fastest computer in the world is
 equivalent to $1\%$ of  our brain. There are some concerns on the power required
-to run those machines,  compared to our brain running on only $20 W$. Some
+to run those machines. This super computer uses about $20MW$
+(principally due to the cooling system), while our brain runs on only $20 W$.
+Some
 attempts have been made at creating efficient low-energy computer, notably by
 Pr. Kwabena Boahen at Stanford. He created a computer mimicking the brain made
 of 16 Neurocore, each costing about \$40000,  resulting in a something \lq 9,000
@@ -1245,7 +1254,7 @@ bioengineers create circuit board modeled on the human brain }}
 As machine learning makes progress, it can automate things that were made by
 human in the past. Again, a good example of it is the car industry. While it's
 probably a good thing for anyone to not have to drive your car to work, it gets
-much worse if you're a taxi driver and work to pay the universtity fees of your
+much worse if you're a taxi driver and work to pay the university fees of your
 children. Car drivers are we know them are likely to disappear one day, and this
 day is not that far. The French car company Valeo states that there are 4 steps
 from manual driving to fully self-driving cars. One is support to park your car.
@@ -1274,7 +1283,7 @@ support, transportation, construction, etc.
 \smallskip
 
 Usually, those who protest against that trend have to face the fact that
-technology is creating more jobs than the number of jobs it detroys. Though, a
+technology is creating more jobs than the number of jobs it destroys. Though, a
 \href{http://www.pewinternet.org/2014/08/06/future-of-jobs/}{Pew Research article}
 states that for the first time, experts consider that by 2025, technology will
 destroy more jobs than the number of jobs it creates. It's a widespread trend to
@@ -1303,7 +1312,7 @@ reshaping the way we work. Two is about enabling people to work.
 
 Since we can expect technology to start destroying jobs by 2025, we'll need to
 rethink the way society works. Today, work is the core element of the society.
-Unemployed people are helped to find a job. We studdy to find a job. Social
+Unemployed people are helped to find a job. We study to find a job. Social
 classes depends on jobs.
 The thing is, if we can automate most of the work company do today (growing food,
 enabling people to move, producing energy), the time when progress was based on
@@ -1328,18 +1337,20 @@ Hence, education will be more important than ever.
 
 \subsubsection{The rising importance of education}
 
-Today, school is about enbaling people to have common ground and to enter the
+Today, school is about enabling people to have common ground and to enter the
 job market once they become adults. Some students drop out of school before
 having a degree, and can find a blue-collar job. Though, what happens when those
 jobs no longer exist.
-We've seen that craftmanship will always be values. For instance, the most
+We've seen that craftsmanship will always be values. For instance, the most
 efficient way to produce watches is to build them in a factory, with machine
 assembling the different components of it. Though, people value watches that have
-been made by a craftman. If we stick to this reasoning, we can expect some
+been made by a craftsman. If we stick to this reasoning, we can expect some
 blue-collar jobs to continue existing. Though, they will produce luxury items.
 For the big part of it, jobs will require a very strong background. Hence,
 school and university will need to train students better and better with time to
-reach the always increasing barrier to entry on the laber market. Most of the
+reach the always increasing barrier to entry on the
+% ??? laber
+market. Most of the
 jobs will be engineer-level jobs.
 Consequently, we'll need to reshape the way we teach to manage to increase the
 level of students each year, so they can find a job.
@@ -1365,12 +1376,15 @@ the  importance we attribute to work.
 Though, we're still very far from artificial general intelligence. First, the
 computing power available is not powerful enough. Second, the models we have
 are showing their limits. In spite of the enthusiasm there is around AI, we
-need to bare in mind that superintelligence won't become a reality for years,
+need to bare in mind that super-intelligence won't become a reality for years,
 and we may even never reach it. Most companies selling commercial AI products
 are applying Machine Learning models to narrow industries, hard AI, for the
 moment, is only mentioned in scientific papers and has no impact on the
-entrepreneurial ecosystem.  The Turing test has not been passed by a machine for
-the last 50 years, and  is not likely to be passed soon. AI will most likely
+entrepreneurial ecosystem.
+The Turing test has not been passed by a machine for the last 50 years,
+%%              ^^^^^^^^^^^^^^^^^^^^  in contradiction with the introduction.
+and is not likely to be passed soon.
+AI will most likely
 lead to a revolution in the  way we live, and it's likely that it will start
 impacting our lives through  startups. We just need to bare in mind that this
 change will probably take dozens  of year to happen for real.
@@ -1381,9 +1395,9 @@ change will probably take dozens  of year to happen for real.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Glossary  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \printglossaries
-%
-% \pagebreak
+\printglossaries
+\pagebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1391,7 +1405,7 @@ change will probably take dozens  of year to happen for real.
 \begin{thebibliography}{20}
 
   \bibitem{seq2seq} Oriol Vinyal \& Quoc V. Le,
-  {\em A Neural Conversation Model}, Google - June 2015.
+  {\em A Neural Conversational Model}, Google - June 2015.
 
   \bibitem{Turing} Alan Turing, {\em The Imitation Game} - 1950.
 
