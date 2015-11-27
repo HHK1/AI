@@ -32,8 +32,7 @@
 \newglossaryentry{neuralLabel}
 {
   name={Neural Network},
-  %% TODO ??
-  description={is fairly complex}
+  description={}
 }
 
 \newglossaryentry{petaflops}
@@ -126,8 +125,8 @@ well as a Human in every domain, and not only in \gls{NLP}. We'll call such an
 AI an \gls{AGI}, as it has the same intelligence as a human. \\
 
 But, are we really far from building human like AI ? In his book {\em The
-Singularity is near} \cite{Kurzweil}, bases his theory upon the fact that
-technological progress follows the Moore's Law
+Singularity is near} \cite{Kurzweil}, futurist Ray Kurzweil bases his theory
+upon the fact that technological progress follows the Moore's Law
 \footnote{\href{https://en.wikipedia.org/wiki/Moore\%27s_law} {Wikipedia -
 Moore's Law} }, and as such, is exponential. According to him, we're accustomed
 to think linearly, and subsequently not able to handle exponential progress.
@@ -146,7 +145,7 @@ who worked with Turing was one of the first to write about it: \\
 \begin{quotation}
    Let an ultra-intelligent machine be defined as a machine that can far surpass
    all the intellectual activities of any man however clever. Since the design
-   of machines is one of these intellectual activities, an ultraintelligent
+   of machines is one of these intellectual activities, an ultra-intelligent
    machine could design even better machines; there would then unquestionably be
    an \lq intelligence explosion\rq , and the intelligence of man would be left
    far behind. Thus the first ultraIntelligent machine is the last invention
@@ -189,7 +188,7 @@ demonstrating this}}, but failed to achieve similar succes where planning is
 necessary. This example shows how it is possible to interact in an adaptive
 maner with more complex environnments where the input is a video. \\
 
-Speaking of more complex environnment, another example of very good \gls{ANI} is
+Speaking of more complex environment, another example of very good \gls{ANI} is
 the self driving car. It is much better than human at driving, and it can do it
 non-stop and in a safely way. The google car has now driven over 1 million
 miles, and has been involved in only 14 accidents. The car was even not
@@ -244,7 +243,7 @@ Compared to other disciplines, it is still relatively young, and there is still
 plenty of things to be discovered. We'll present a brief history of Artificial
 Intelligence studies, along with some basics concepts and results that will
 allow us to understand the models discussed after. We'll then see how access to
-faster computer and to Big Datasets allows some progress in Artificial
+faster computer and to Big Datasets has allowed some progress in Artificial
 Intelligence.
 
 \subsection{A bit of History}
@@ -268,14 +267,16 @@ scientists of IBM. It was held at Dartmouth College, and the scientists
 attending the project were to become major authors and influencers for the
 decades to come. \cite{DartMouth}\\
 
-The early programs used what is essentially a tree exploration program. For a maze
-exploration, or a proof of a theorem, the algorithm is simply moving forward the
-possibilities, turning back when it reaches a dead end, or abandoning a whole
-section of possibilities. It proved successful on a number of simple problems,
-where the number of possibilities, or search space, is limited. But on larger
-problems, the search space would simply explode making it impossible to explore.
-The idea was then to estimate sub-goals thanks to heuristics functions specific to
-each problem.
+The early programs created by the newborn field of AI used what is essentially a
+tree exploration program. For a maze exploration, or a proof of a theorem, the
+algorithm is simply moving forward the possibilities trying to reach a goal (the
+exit of the maze, or the conclusion of the theorem). The programm is turning
+back when it reaches a dead end, or can abandon a whole path and the
+possibilites behind it if it is deemed unpromising. It proved successful on a
+number of simple problems, where the number of possibilities, or search space,
+is limited. But on larger problems, the search space would simply explode making
+it impossible to explore. The idea was then to estimate sub-goals thanks to
+heuristics functions specific to each problem.
 
 \begin{figure}[ht]
     \centering
@@ -299,7 +300,7 @@ facing for many reasons.
 
 They focused on studying logical problems, or theorem proving, problems considered
 difficult for a human mind. Thus, they considered that {\em simple} tasks such as
-vision would be easy to reverse-engineer once more high-level problems had been
+vision would be easy to reverse engineer once more high-level problems had been
 solved. This is known as the Moravec's paradox:
 
 \begin{quotation}
@@ -320,12 +321,14 @@ they could not deliver what they had promised. Their examples worked on simple
 cases but did not achieve significant results on more complex, real-world
 applications.\\
 
+%TODO: rephrase the introduction of paragraph
 During the same period, work continued on neural nets and their possible
 applications The Perceptron algorithm, created in 1957 by Frank Rosenblatt, was
 a promising linear classifier. However 1969 Minsky and Papert published {\em
 Perceptrons}, criticizing the possibilities offered by Perceptrons, and stating
 that a single artificial neuron was not able to implement a certain logical
-function, the exclusive-or function. It turned out it is actually possible, but
+function, the exclusive-or function. This would have grandly limited the mathematical
+possibilities of the structure, but it turned out it is actually possible. However
 this result, combined with the disillusion of AI research, led to was is known as
 the first AI Winter.
 
@@ -337,8 +340,8 @@ research.
 
 AI research was now forced to focus on specific projects, and achieve results on
 clear objectives. Expert Systems were one of the success of AI. It focused on
-specific fields of knowledge, associating databases in this with logical rules
-infered from experts in this domain. It helped AI revive in the 80's, as expert
+specific fields of knowledge, associating databases with logical rules
+infered from experts in those fields. It helped AI revive in the 80's, as expert
 systems  helped large corporation in saving millions of dollars.\\
 
 The domain of neural network was also revived by the discovery of the back
@@ -364,6 +367,8 @@ that states that \lq When we know how a machine does something {\em
 intelligent}, it ceases to be regarded as intelligent.\rq
 \footnote{\href{http://www.washingtontimes.com/news/2006/apr/13/20060413-105217-7645r/}
 {Fred Reed}}
+
+%TODO: add some stuff about recent results
 
 \pagebreak
 
@@ -397,16 +402,15 @@ this is just to give an idea of what has been achieved. The world's fastest
 supercomputer is Tianhe-2, in Guangzhou. It has a speed of 33.86 \gls{petaflops}
 and cost about \$390 millions. During summer 2013, the largest neural network
 simulation was run on a super computer a bit less powerful, on the K computer,
-with a speed of about 10 petaflops.
-\footnote{\href{http://www.sciencedaily.com/releases/2013/08/130802080237.htm}
+with a speed of about 10 petaflops.\footnote{\href{http://www.sciencedaily.com/releases/2013/08/130802080237.htm}
 {Largest neuronal network simulation to date achieved using Japanese
 supercomputer}} The simulation represented about 1\% of the brain, and was able
 to simulate the brain activity during one second. This does not give us the
-processing speed of a human brain, and does not allow to compared directly the
+processing speed of a human brain, and does not allow to compare directly the
 brain to those computer in term of raw power, but we can extrapolate, and
 estimate that we would need a super computer with a speed in the exaflops, which
 is $10^{18}$ flops. According to the Moore's Law, this {\em should} happen around
-2020.
+2020.\\
 
 \begin{figure}[ht]
     \centering
@@ -419,8 +423,8 @@ is $10^{18}$ flops. According to the Moore's Law, this {\em should} happen aroun
 %% power. The Tianhe-2 uses $24MW$ with its cooling system. The brain uses 20 W.
 
 One other promising lead is the parallelization of computing. Thanks to more and
-more performant GPUs \footnote{Too make it simple, a GPU is capable of handling
-a large number of simple, parallel tasks.}, associated  with  the use of cloud
+more performant GPUs\footnote{Too make it simple, a GPU is a computational unit
+capable of handling a large number of simple, parallel tasks.}, associated  with  the use of cloud
 computing \cite{cloud}, it helps training neural networks on large datasets.
 
 This access to better hardware, and more computing power partly explains the
@@ -436,10 +440,9 @@ them, with huge datasets.
 \subsubsection{Access to big datasets}
 
 
-As a matter of fact, size of training data is important when it comes to
-training of neural networks. We said in the first part that neural networks were
-inspired by the network structure of neurons in the brain, but did not give a
-definition of \gls{neuralLabel}. A neural network is a class of statistical
+As a matter of fact, size of training data is important when it comes to the
+training of neural networks. As explained in the first part that neural networks were
+inspired by the network structure of neurons in the brain. More precisely A \gls{neuralLabel} is a class of statistical
 functions, that contains processing units, called neurons, linked together by
 adaptive weights, that are adjusted with the help of a learning algorithm.
 The input neurons are linked to output neurons, traversing one or more hidden
@@ -626,8 +629,13 @@ Another, less immediate result, is that it captures linguistics regularities
 some linear operations on the vector representations of words. For example,
 the vector : $\vec{\textbf{King}} - \vec{\textbf{Man}} + \vec{\textbf{Woman}}$ will be very close to the vector
 representation of the word \lq Queen\rq.
-%%%  ???
-%%% The figure
+
+Figure \ref{fig:wordpair} shows some more example of such relationships. By
+computing  the distance between countries and their capital, it can exhibit the
+capital of other countries found in the training corpus. Some other examples
+show grammatical similarities between words. The same distance is observed
+between adjectives and their superlatives: small-smallest and tall-tallest.
+
 
 \begin{figure}[ht]
     \centering
@@ -692,7 +700,9 @@ radar sensors that are located all around the car to localize potential
 obstacles. Usually, there are 4 of those: 3 at the front and 1 at the back of
 the car. On the sides of the car, there are ultra sonic sensors which are a bit
 different, they're used to locate objects close to the car. Think about parking
-for instance.
+for instance. When you think about it, all this information gathered by these sensors,
+if properly interpreted, will give far more precision and safety to an autonomous car
+than a regular car driven by a Human.
 
 \noindent On top of this, a video camera points to the front. It aims to detect
 traffic lights and road signs. The central element among all those sensors is
@@ -816,6 +826,7 @@ Google now. Both these system can perform actions based on the user's speech.
 This technology enables the user to perform actions on the service of his
 choosing (OpenTable, Yelp), without having to use any interface. The speech is
 the communication tool.
+
 \\
 
 \paragraph{Technology behind it}
@@ -859,8 +870,8 @@ Google's search engine. If you are the entry point for the customer, it's very
 hard for competitors to make the users switch. Startups like Magic benefited
 from their speed of execution, but the ability to scale requires to leverage AI
 technology. It's not clear today whether startups or giants will succeed in that
-field. Though it's interesting to see that the 2 take 2 opposite approach to
-later converge in the same area.
+field. Though it's interesting to see that the 2 opposite approach are now converging
+to a similar solution.
 
 Additional services from startup in that space intend to focus on one vertical
 only. A good example of it are personal assistant focused on organizing meetings
@@ -886,7 +897,12 @@ possible.
 
 \subsubsection{Death of interfaces}
 
-The main benefit of such services for the user is that it's a very easy way to
+The most natural interface of communication between Human beings is the spoken language.
+Other forms of interface were created to allow people to use machines in the simplest way as
+possible. However, an interface, even if well designed, will never be as immediate and
+easy to use as spoken language.
+
+Consequently, the main benefit of a personnal assistant for the user is that it's a very easy way to
 communicate with a machine, in order to get a service. Think about the
 User-Experience behind it. If you use a speech recognition, you would just
 have to say: \lq Book me a table for 2 in a historic area of Paris, where I
@@ -912,7 +928,7 @@ interface. UX designers often struggle to make an app available to all. No
 interface is probably the most efficient. Even a 80 year-old who has never used
 an app in their life would be able to use it. We can then imagine that, instead
 of having dozens of apps on our phone or dozens of websites pinned on our
-browsers, a single personal assistant app could do the job. Just like Google
+browsers a single personal assistant app could do the job. Just like Google
 does for search today. This user experience part make those personal assistant
 particularly appealing in the long-run, because the friction to start using them
 is very low. A good example of it we saw is about forwarding professional
@@ -920,7 +936,9 @@ expenses to the company's accountant. The mainstream service for it today is
 Expensify. You just need to install an app on your phone (meaning, if you have
 1000 people in the company, they all need to install it), then you can take a
 picture of a receipt and it will automatically be sent to the company's
-accountant. This all process would be easier with a speech or written language
+accountant. Right now the picture is manually treated behind the scenes, and the
+process is only half-automated, taking several hours to process a picture.
+This would be a lot easier with a speech or written language
 recognition app. You could just send over the receipt's picture via text to the
 company AI bot. It will recognize what it is, potentially ask a few question
 about the expense and done.
@@ -1051,7 +1069,7 @@ SaaS platform, and they are all inter-connected. The step one was to provide
 each of those business units with a tool that facilitates their life. Step 2 is
 to automate those business units. A good example of it is Stripe, Baremetrics
 \& Octobat. Those three SaaS combined can almost take care of all the payments,
-invoicing and sales reporting, without requiring a heavy setup not human
+invoicing and sales reporting, without requiring a heavy setup nor human
 intervention once they work. Octobat automatically invoices the customers
 according to the payments which were made or which are scheduled in Stripe.
 Baremetrics does the reporting out of the box.
@@ -1361,30 +1379,36 @@ level of students each year, so they can find a job.
 \section*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
-While reading through articles and papers about the progress of AI, we can
-conclude  that there's definitely a rising interest for it. This interest comes
-from the  acceleration of AI progress, that was enabled by advancement in the
-models, in  computing power and by the growing amount of data that can be
-collected. This  progress is starting to impact the entrepreneurial ecosystem.
-Software is  changing thanks to machine learning as it did thanks to the cloud.
-This impact is going to change the way society works, especially in regards to
-the  importance we attribute to work.
+
+Artificial Intelligence is still a relatively new scientific discipline, and a
+great deal can still be achieved in this field. The idea of an human like
+intelligent Machine was conceived long before the first intelligent programs
+were made, and greatly influenced the early years of Artificial Intelligence,
+misleading public opinion and investors. However, we're witnessing a rising
+interest in AI and a better understanding of what it  is capable to truly
+achieve, i.e. creating highly specialized programs with super  human capacities
+that have the potential to completely disrupt an industry.
+
+This interest comes from the  acceleration of AI progress, that was enabled by
+advancement in the models, in  computing power and by the growing amount of data
+that can be collected. This  progress is starting to impact the entrepreneurial
+ecosystem. Software is  changing thanks to machine learning as it did thanks to
+the cloud. This impact is going to change the way society works, especially in
+regards to the  importance we attribute to work.
 
 Though, we're still very far from artificial general intelligence. First, the
-computing power available is not powerful enough. Second, the models we have
-are showing their limits. In spite of the enthusiasm there is around AI, we
-need to bare in mind that super-intelligence won't become a reality for years,
-and we may even never reach it. Most companies selling commercial AI products
-are applying Machine Learning models to narrow industries, hard AI, for the
-moment, is only mentioned in scientific papers and has no impact on the
-entrepreneurial ecosystem.
-The Turing test has not been passed by a machine for the last 50 years,
-%%  TODO            ^^^^^^^^^^^^^^^^^^^^  in contradiction with the introduction.
-and is not likely to be passed soon.
-AI will most likely
-lead to a revolution in the  way we live, and it's likely that it will start
-impacting our lives through  startups. We just need to bare in mind that this
-change will probably take dozens  of year to happen for real.
+computing power available is not powerful enough. Second, the models we have are
+showing their limits. In spite of the enthusiasm there is around AI, we need to
+bare in mind that super-intelligence won't become a reality for years, and we
+may even never reach it. Most companies selling commercial AI products are
+applying Machine Learning models to narrow industries, hard AI, for the moment,
+is only mentioned in scientific papers and has no impact on the entrepreneurial
+ecosystem. However, AI will most likely lead to a revolution in the  way we
+live, and it's likely that it will start impacting our lives through  startups.
+We just need to bare in mind that this change will probably take dozens  of year
+to happen for real. Just like specialized machines replaced human workers in old
+industries,  new specialized, intelligent machines will replace humans for tasks
+where they outperform humans.
 
 
 \pagebreak
