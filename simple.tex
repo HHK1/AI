@@ -32,14 +32,33 @@
 \newglossaryentry{neuralLabel}
 {
   name={Neural Network},
-  description={}
-}
+  description={Also called neural net. A computer model designed to simulate the
+  behavior of biological neural networks, as in pattern recognition, language
+  processing, and problem solving, with the goal of self-directed information
+  processing} }
 
 \newglossaryentry{petaflops}
 {
   name={petaFLOPS},
   description={One petaflop is $10^15$ floating operations per second}
 }
+
+\newglossaryentry{deeplearning}
+{
+  name={Deep Learning},
+  description={is a branch of machine learning based on a set of algorithms that
+  attempt to model high-level abstractions in data by using numerous processing
+  layers}
+}
+
+\newglossaryentry{reinforcementLearning}
+{
+  name={Reinforcement Learning},
+  description={is a concept in machine learning, where the learning agent is taking action
+  as to maximize a cumulative reward. Thus the agent is learning from its own actions thanks to the
+  output resulting from it}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,6 +113,26 @@
 
 \section*{Acknowledgments}
 \addcontentsline{toc}{section}{Acknowledgments}
+
+\bigskip
+
+\bigskip
+
+I would like to thank Guillaume Wenzek, tutor for this thesis, for the help and
+the resources he provided  during the redaction of this paper. \\
+
+\bigskip
+
+
+\noindent I would like to thank Romain, who I've been working with on the subject and who
+proved to be a great partner to work with.\\
+
+\bigskip
+
+
+\noindent Lastly I would like to thank the administration of HEC, that chose modernity
+and internationalization by letting us write this paper in English.
+
 
 \pagebreak
 
@@ -172,14 +211,13 @@ think\rq} \footnote{
 {\em did} manage to win at Jeopardy!, and to beat the best players in the world.
 The argument that Watson is not thinking, because it was not able to know and
 realize it has won is true. However, the technical feat is here. Watson is
-definitely not an Artificial General Intelligence, but it is a spectacular
-example of Artificial Narrow Intelligence. \\
+definitely not an \gls{AGI}, but it is a spectacular example of \gls{ANI}. \\
 
 So even if we're not yet close to building an \gls{AGI}, we've managed to build
 great \gls{ANI}s in various domains. Watson and Deep blue were good examples.
 Another astonishing one is an AI developed at Google that learns to play video
-Games \cite{Atari}. The team behind it used a mix of two methods, deep learning
-and reinforcement learning, and the resulting AI was able to learn to play on
+Games \cite{Atari}. The team behind it used a mix of two methods, \gls{deeplearning}
+and \gls{reinforcementLearning}, and the resulting AI was able to learn to play on
 old Atari Games. It only used the video signal inputs, the final score and the
 possible actions, \lq just as a human player would\rq. It managed pretty well on
 games where reaction prevails, just like in Break Out
@@ -227,7 +265,7 @@ machines thanks to the progresses made in Natural Language Processing.
 
 \noindent Lastly, we'll see what are today's limitations, and what remains to be
 achieved before all these breakthroughs start being fully usable. We'll question
-the possible rise of an Artificial Super Intelligence, and what are the caveats
+the possible rise of an \gls{ASI}, and what are the caveats
 expressed by some members of the scientific community.
 
 \pagebreak
@@ -270,9 +308,9 @@ decades to come. \cite{DartMouth}\\
 The early programs created by the newborn field of AI used what is essentially a
 tree exploration program. For a maze exploration, or a proof of a theorem, the
 algorithm is simply moving forward the possibilities trying to reach a goal (the
-exit of the maze, or the conclusion of the theorem). The programm is turning
+exit of the maze, or the conclusion of the theorem). The program is turning
 back when it reaches a dead end, or can abandon a whole path and the
-possibilites behind it if it is deemed unpromising. It proved successful on a
+possibilities behind it if it is deemed unpromising. It proved successful on a
 number of simple problems, where the number of possibilities, or search space,
 is limited. But on larger problems, the search space would simply explode making
 it impossible to explore. The idea was then to estimate sub-goals thanks to
@@ -321,9 +359,8 @@ they could not deliver what they had promised. Their examples worked on simple
 cases but did not achieve significant results on more complex, real-world
 applications.\\
 
-%TODO: rephrase the introduction of paragraph
 During the same period, work continued on neural nets and their possible
-applications The Perceptron algorithm, created in 1957 by Frank Rosenblatt, was
+applications. The Perceptron algorithm, created in 1957 by Frank Rosenblatt, was
 a promising linear classifier. However 1969 Minsky and Papert published {\em
 Perceptrons}, criticizing the possibilities offered by Perceptrons, and stating
 that a single artificial neuron was not able to implement a certain logical
@@ -341,8 +378,8 @@ research.
 AI research was now forced to focus on specific projects, and achieve results on
 clear objectives. Expert Systems were one of the success of AI. It focused on
 specific fields of knowledge, associating databases with logical rules
-infered from experts in those fields. It helped AI revive in the 80's, as expert
-systems  helped large corporation in saving millions of dollars.\\
+inferred from experts in those fields. It helped AI revive in the 80's, as expert
+systems helped large corporation in saving millions of dollars.\\
 
 The domain of neural network was also revived by the discovery of the back
 propagation algorithm, a technique used to train neural networks. Neural
@@ -368,7 +405,16 @@ intelligent}, it ceases to be regarded as intelligent.\rq
 \footnote{\href{http://www.washingtontimes.com/news/2006/apr/13/20060413-105217-7645r/}
 {Fred Reed}}
 
-%TODO: add some stuff about recent results
+Very Recently, some great results have been achieved with the use of
+\gsl{deeplearning}, especially  in the field of image classification. Google has
+achieved some astonishing results in image classification, being able to
+label image extremely precisely, and sometimes with a precision and a degree
+of accuracy close to or greater than what a human would achieve.
+Facebook has been using the same technique very recently to improve the
+accessibility of its services to its visually impaired users. Clicking on
+pictures in accessibility modes now gives a short description of what's actually
+in the picture, giving more context for those who can't precisely what's in it.
+
 
 \pagebreak
 
@@ -500,7 +546,7 @@ hidden layer is used as the input layer for the next one, we can talk about
 feedforward neural networks: There is no loop or cycle in the network. On the
 contrary, recurrent neural network do present such loops. A neural network
 will be qualified deep if it has more than two layers of non-linear neurons.
-Deep learning has been highly popular recently, but it has been around since the late
+\gls{deeplearning} has been highly popular recently, but it has been around since the late
 80's. Yann LeCun successfully applied the back-propagation algorithm to deep neural
 networks in 1989, in order to recognize handwritten zip Codes \cite{lecun}.
 However the network was pretty long to train (about 3 days), and the lack of computing
@@ -558,8 +604,8 @@ actions  by learning of their mistakes.
 \subsubsection{Deep Learning}
 
 We've already defined what deep neural networks was in the last section, neural
-networks with 2 or more hidden layers. Deep learning refers to the use of such
-networks in machine learning. Something important about Deep Learning is that
+networks with 2 or more hidden layers. \gls{deeplearning} refers to the use of such
+networks in machine learning. Something important about \gls{deeplearning} is that
 each layer get to have a certain representation of the data being learn. The
 data is a composition of multiple factors, each factor being learned by a layer
 in the  network. This can be particularly well observed in image recognition,
@@ -1379,22 +1425,26 @@ level of students each year, so they can find a job.
 \section*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
+\bigskip
 
 Artificial Intelligence is still a relatively new scientific discipline, and a
 great deal can still be achieved in this field. The idea of an human like
 intelligent Machine was conceived long before the first intelligent programs
 were made, and greatly influenced the early years of Artificial Intelligence,
-misleading public opinion and investors. However, we're witnessing a rising
-interest in AI and a better understanding of what it  is capable to truly
-achieve, i.e. creating highly specialized programs with super  human capacities
-that have the potential to completely disrupt an industry.
+misleading public opinion, investors and scientists themselves. For a long time
+AI was more a science fiction subject, and failed to deliver useful and real
+life applications However, we're witnessing a rising interest in AI and a better
+understanding of what it  is capable to truly achieve, i.e. creating highly
+specialized programs with super  human capacities that have the potential to
+completely disrupt an industry.\\
 
-This interest comes from the  acceleration of AI progress, that was enabled by
-advancement in the models, in  computing power and by the growing amount of data
-that can be collected. This  progress is starting to impact the entrepreneurial
-ecosystem. Software is  changing thanks to machine learning as it did thanks to
-the cloud. This impact is going to change the way society works, especially in
-regards to the  importance we attribute to work.
+This interest comes from the acceleration of AI progress, that was enabled by
+advancement in the models and techniques, especially in Machine Learning. The
+exponential increase in computing power and the explosion of data collected also
+took part in the recent successes. This progress is starting to impact the
+entrepreneurial ecosystem. Software is changing thanks to machine learning as
+it did thanks to the cloud. This impact is going to change the way society
+works, especially in regards to the  importance we attribute to work.\\
 
 Though, we're still very far from artificial general intelligence. First, the
 computing power available is not powerful enough. Second, the models we have are
