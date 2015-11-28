@@ -127,12 +127,6 @@ the resources he provided  during the redaction of this paper. \\
 \noindent I would like to thank Romain, who I've been working with on the subject and who
 proved to be a great partner to work with.\\
 
-\bigskip
-
-
-\noindent Lastly I would like to thank the administration of HEC, that chose modernity
-and internationalization by letting us write this paper in English.
-
 
 \pagebreak
 
@@ -297,7 +291,17 @@ of modern computers.\cite{Turing1936}
 Results in neurology research showing that the brain was a vast networks of
 neurons, sending discrete electrical signal, inspired the idea of artificial
 neural neurons. In 1951 Minsky and Edmonds built the SNARC, the first neural net
-machine with a hardware relying on vacuum tubes.
+machine with a hardware relying on vacuum tubes. This machine modeled the
+behavior of a  rat searching his way through a maze, and was made of 40 neurons,
+with synapses (i.e. connections) that adapted their weights after measuring the
+success of the task: Finding the exit.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{SNARC}
+    \caption{A neuron unit, part of the Stochastic Neural Analog Reinforcement Computer}
+    \label{fig:snarc}
+\end{figure}
 
 The discipline of Artificial intelligence itself was founded later, during the
 summer of 1956. It was organized by Minsky and McCarthy, and two senior
@@ -403,20 +407,19 @@ have become  mainstream stopped being called AI. It is part of the AI effect,
 that states that \lq When we know how a machine does something {\em
 intelligent}, it ceases to be regarded as intelligent.\rq
 \footnote{\href{http://www.washingtontimes.com/news/2006/apr/13/20060413-105217-7645r/}
-{Fred Reed}}
+{Fred Reed}}\\
 
 Very Recently, some great results have been achieved with the use of
 \gsl{deeplearning}, especially  in the field of image classification. Google has
 achieved some astonishing results in image classification, being able to
 label image extremely precisely, and sometimes with a precision and a degree
 of accuracy close to or greater than what a human would achieve.
+
 Facebook has been using the same technique very recently to improve the
 accessibility of its services to its visually impaired users. Clicking on
 pictures in accessibility modes now gives a short description of what's actually
 in the picture, giving more context for those who can't precisely what's in it.
 
-
-\pagebreak
 
 \subsection{Why is AI progressing faster and faster?}
 
@@ -659,6 +662,8 @@ available.
     \label{fig:deepdream}
 \end{figure}
 
+\pagebreak
+
 \subsubsection{Word Vectors}
 
 Word vector is a technique used to represent a set of words, or vocabulary, into
@@ -668,12 +673,12 @@ The first immediate result is that similar word tend to be clustered together:
 Words which are semantically close end up to be close in the space of vectors.
 \footnote{The popular \href{https://code.google.com/p/word2vec/}{word2Vec} tool provided by google gives some examples.}
 Checking the closest neighbors of the word France will output a list of european
-countries, the first being neighboring countries of France.
+countries, the first being neighboring countries of France.\\
 
 Another, less immediate result, is that it captures linguistics regularities
 \cite{continuousWordVec}. The representation in term of vectors allows to make
 some linear operations on the vector representations of words. For example,
-the vector : $\vec{\textbf{King}} - \vec{\textbf{Man}} + \vec{\textbf{Woman}}$ will be very close to the vector
+the vector: $\vec{\textbf{King}} - \vec{\textbf{Man}} + \vec{\textbf{Woman}}$ will be very close to the vector
 representation of the word \lq Queen\rq.
 
 Figure \ref{fig:wordpair} shows some more example of such relationships. By
@@ -697,7 +702,6 @@ at extracting subjective informations from the source.\cite{sentiment}
 
 
 \pagebreak
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Second Part %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -748,7 +752,7 @@ the car. On the sides of the car, there are ultra sonic sensors which are a bit
 different, they're used to locate objects close to the car. Think about parking
 for instance. When you think about it, all this information gathered by these sensors,
 if properly interpreted, will give far more precision and safety to an autonomous car
-than a regular car driven by a Human.
+than a regular car driven by a Human.\\
 
 \noindent On top of this, a video camera points to the front. It aims to detect
 traffic lights and road signs. The central element among all those sensors is
@@ -776,7 +780,7 @@ Therefor, the car is able to predict the behavior of surrounding elements
 (both car, bikes, pedestrians). Such things are based on \gls{neuralLabel} being
 fed with the driving data of million of other cars
 that Google has been collecting. This video by Google provides a great example
-of how the car perceives its environment and can make decisions.
+of how the car perceives its environment and can make decisions.\\
 
 \smallskip
 
@@ -801,10 +805,12 @@ enhances a car's capabilities by seamlessly integrating self-driving car
 capabilities to your existing car. It works by adding sensors and a computer to
 the car, and works in a similar fashion as the Google car. The idea is that you
 can add those features to your car for about \$ 15,000 depending on the vehicle
-you have. Google has a similar approach: according to several journalistic
+you have.
+
+Google has a similar approach: according to several journalistic
 sources, they intend to resell their self-driving technologies to automotive
 companies. Though, many people fear that Google will have a significant
-bargaining advantage, as those car companies don't have the technology yet.
+bargaining advantage, as those car companies don't have the technology yet.\\
 
 Some other companies intend to replace current car makers. Tesla is the best
 example in the category. Though the company CEO, Elon Musk, is confident
@@ -816,7 +822,7 @@ Many reporters concluded that Tesla will likely be the first company to sell
 autonomous cars, that were built in-house. Similar to Tesla, there could be new
 car giants rising by leveraging the opportunity to build both a new type of car
 and a powerful self-driving technology. \footnote{\href{http://www.forbes.com/sites/chunkamui/2014/08/04/5-reasons-why-automakers-should-fear-googles-driverless-car/}
-{Five reasons why automakers should fear Google's driver less car}}
+{Five reasons why automakers should fear Google's driver less car}}\\
 
 Finally, the most ambitious model is probably the one by Uber. The idea behind
 it is that using UberX costs about \$ 2.15 per mile (source: AKA research).
@@ -843,7 +849,7 @@ No matter who's leading that change, it's likely that our own definition of the
 car is going to change. Mercedes has shown an example of a car being similar to
 a living room: the Mercedes-Benz F 015. Travelers could sleep, chat, browse the
 Internet as if they were at home. The car has been driving around San Francisco
-this year.
+this year.\\
 
 \smallskip
 \begin{figure}[ht]
@@ -901,14 +907,14 @@ has a limited inventory, Magic, as a personal assistant, needs to be able to
 deliver anything the user wants. The second part of the complexity is scaling.
 When you have human handling each operation at the beginning, you need to
 progressively create processes to better handle certain tasks, and eventually
-automate entire parts of the workflow.
+automate entire parts of the workflow.\\
 
 Combining AI and diversity of requests doesn't seem to be possible today. Such
 startups are having trouble to scale. The current solution is to combine a mix
 of the two. Facebook Messenger recently launched a service called M that
 illustrates it: they've leveraged the purchase of the French startup Wit.ai and
 a team of personal assistants that handle manually some request to provide this
-personal assistant service.
+personal assistant service.\\
 
 This market is likely a winner takes all one. Since these personal assistant
 platforms are about connecting people with services, their model is similar to
@@ -917,7 +923,7 @@ hard for competitors to make the users switch. Startups like Magic benefited
 from their speed of execution, but the ability to scale requires to leverage AI
 technology. It's not clear today whether startups or giants will succeed in that
 field. Though it's interesting to see that the 2 opposite approach are now converging
-to a similar solution.
+to a similar solution.\\
 
 Additional services from startup in that space intend to focus on one vertical
 only. A good example of it are personal assistant focused on organizing meetings
@@ -925,7 +931,7 @@ between to person who want to schedule an appointment. To name a few, players in
 that space are x.ai, assistant.ai or Juliedesk. These companies are managing to
 live up to their promise, but the complexity once again lies in the ability to
 scale. They are strongly investing in AI to replace human services that they
-first relied on.
+first relied on.\\
 
 Finally, we could imagine two models for that space.
 One would be a model built by a major tech company (among Facebook, Google or
@@ -935,7 +941,7 @@ provide food delivery, order delivery, or pretty much anything.
 The second model would be a platform one. A company like Magic could be the
 entry point for the user. Then, if a calendar request is made to Magic, it would
 just have to tag it as so and to route it to a Calendar booking service such as
-x.ai.
+x.ai.\\
 
 The former seems more likely as concentrating the efforts in Machine Learning is
 probably the best approach to achieve the best results, though the two are
@@ -948,7 +954,7 @@ Other forms of interface were created to allow people to use machines in the sim
 possible. However, an interface, even if well designed, will never be as immediate and
 easy to use as spoken language.
 
-Consequently, the main benefit of a personnal assistant for the user is that it's a very easy way to
+Consequently, the main benefit of a personal assistant for the user is that it's a very easy way to
 communicate with a machine, in order to get a service. Think about the
 User-Experience behind it. If you use a speech recognition, you would just
 have to say: \lq Book me a table for 2 in a historic area of Paris, where I
@@ -966,7 +972,7 @@ The former is way faster. Another benefit is in what we would call \lq unique\rq
 cases. Say you want to book a laser-tag party in Paris, and you've never done it
 before. You don't know where to look, so you're going to spend time figuring out
 how to book a good laser-tag game. You'll probably need to benchmark a few,
-look at the review, etc.
+look at the review, etc.\\
 
 A strong case in favor of speech-based application is that you don't need to
 learn about the existence of the service, and you don't need to use any
@@ -1085,7 +1091,8 @@ buy. A few SaaS services already provide that kind of intelligence:
 \href{http://uk.insidesales.com/}{Insidesales} are good examples of it.
 The main challenge they have is that they work as plugins. Therefore, their
 service is great, but cannot impact the user experience of the sales person
-inside Salesforce for instance.
+inside Salesforce for instance.\\
+
 We can expect the next move in that sphere to be for Salesforce to integrate
 those capabilities. There are actually two ways to integrate them. The first
 is to add even more information in the interface to suggest or show those smart
@@ -1094,7 +1101,8 @@ them in the user flow. Let say a user needs to send an invoice to a customer on
 a monthly. Salesforce could identify this, and figure out that customers who
 receive also stats usage while getting the invoice are less likely to churn. In
 that case, the software could suggest to not only send the invoice, but also
-send monthly usage statistics along with it, in the click of a button.
+send monthly usage statistics along with it, in the click of a button.\\
+
 It's likely that unifying the user flow, which means the current course of
 actions the user takes in Salesforce, and the suggestions from machine learning
 algorithm would be the best way for users to adopt and use it. Therefor, the
@@ -1187,7 +1195,7 @@ it is the ability to gather and share data. For a piece of software to do the
 full job of a business unit (say: accounting), the software needs to have access
 to all the data related to the business. Usually, this data is manually shared
 between services. To automate the process of sharing information, there's a need
-for a software that fully handles it.
+for a software that fully handles it.\\
 
 We're good progress here. A company like
 \href{https://segment.com/}{Segment.com} handles it for analytics and user
@@ -1242,22 +1250,23 @@ get value from it. These two models tend to be ideal because of the mere fact
 that they are aligned with the user's interest. One can note that usage fee is
 the best aligned of the two, and therefor the one companies favor. The
 challenge is that to price your service according to usage, you need to show
-that usage directly impacts the customer's interest. Let's take the example of
-a recruiting platform. Some companies like Job boards enable you to post a
-listing for a job offering online. You pay a subscription: 1 listing for a
-month costs a certain price. Whereas the customer's interest is to hire the
-right person for that job, not to post the listing. As software gets better,
-and as automation and communication between pieces of software increases, it
-will become easier to evaluate the performance of this job listing by the
-quality of applicants to that jobs. Therefore, the model will change from
-subscription to usage fee, where the usage is aligned with the benefit you
-expect from the service. All this suggests that services like recruiting will
-be split into smaller services (job broadcasting, candidate screening with
-machine learning) that will enable to price based on what's considered has
-performance, in that example successfully hire someone. We can expect the
-general trend of having software automatically performing tasks and of
-providing objective stats on its performance to lead to more customer-driven
-business and pricing models.
+that usage directly impacts the customer's interest.\\
+
+ Let's take the example of a recruiting platform. Some companies like Job boards
+ enable you to post a listing for a job offering online. You pay a subscription:
+ 1 listing for a month costs a certain price. Whereas the customer's interest is
+ to hire the right person for that job, not to post the listing. As software
+ gets better, and as automation and communication between pieces of software
+ increases, it will become easier to evaluate the performance of this job
+ listing by the quality of applicants to that jobs. Therefore, the model will
+ change from subscription to usage fee, where the usage is aligned with the
+ benefit you expect from the service. All this suggests that services like
+ recruiting will be split into smaller services (job broadcasting, candidate
+ screening with machine learning) that will enable to price based on what's
+ considered has performance, in that example successfully hire someone. We can
+ expect the general trend of having software automatically performing tasks and
+ of providing objective stats on its performance to lead to more customer-driven
+ business and pricing models.
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1276,7 +1285,7 @@ networks, there are still hard to train, and fine tuning the weights and
 parameters between the unit of the network is more of an art than a science.
 When applied to image recognition, it is possible to visualize what are the
 different features learned by the layers of the network, but is is hardly the
-case with speech recognition and natural language processing.
+case with speech recognition and natural language processing.\\
 
 Moreover, some limitations has been discovered in deep neural networks
 \cite{deepLimits}. It is possible to slightly alter a image that is correctly
@@ -1291,6 +1300,18 @@ human eye, but differ in classification for the network.
     \label{fig:adverserial}
 \end{figure}
 
+Even though this discovery has had some great echoes in the scientific
+community, it remains anecdotic. In order to create this flaw, a random noise
+was added to a correctly classified image, \textit{until} it was not classified
+correctly. But for a vast majority of cases, the classification was not altered
+by the noise. Moreover, in real life applications, let's assume in an autonomous
+vehicle: if a subject was not correctly interpreted due to  some random noise,
+it would certainly be correctly interpreted during a second pass in the system
+(in a video feed for example), or it could be caught and treated as an error by
+the system itself.\\
+
+Though this result is disturbing in our understanding of how neural networks \textit{perceive}
+images, it is not threatening in their ability to correctly predict results.
 
 \subsubsection{Computing limitations}
 
@@ -1307,6 +1328,8 @@ of 16 Neurocore, each costing about \$40000,  resulting in a something \lq 9,000
 times faster and using significantly less power than a typical PC\rq.
 \footnote{\href{http://news.stanford.edu/news/2014/april/neurogrid-boahen-engineering-042814.html}{Stanford
 bioengineers create circuit board modeled on the human brain }}
+
+\pagebreak
 
 \subsection{AI represents a major challenge for startups and for the society}
 
@@ -1329,9 +1352,17 @@ around 2025. What's the impact? People who drive car for a living will lose
 their jobs. Along with truck drivers. Along with people who work in oil
 stations. Along with small towns which only exist because of car or trucks
 stopping by to rest. It's likely that some restaurants or motel nearby the road
-will disappear. That's just the example of the car industry. A ton of other
-industry will be impacted: industrial workers, office and administrative
-support, transportation, construction, etc.
+will disappear. \\
+
+That's just the example of the car industry. A ton of other industries will be
+impacted: Customer support will be greatly automatized. Offices  and
+administrations will be replaces by APIs. Transportation is already being
+disrupted by companies like Uber and Lyft. We just need to rethink these
+industries, and find replacement for the no-longer qualified jobs that are going
+to be destroyed. Having more and more qualified job as entry-level positions is
+a  logical thing, as Human has always tried to make machines capable to replace
+and outperform himself for repetitive and boring tasks.
+
 
 \smallskip
 
@@ -1356,7 +1387,6 @@ can for instance be automated. Lawyers, accountants, financial people, traders w
 most likely suffer the impact of machine learning progress as well.
 
 
-
 \paragraph{A change in the way we work}
 
 We can expect the way we work to change as well, though in positive fashion.
@@ -1366,7 +1396,7 @@ instance, most communication is currently handled through written form, we
 basically communicate with our keyboard for work. NLP can enable a change here,
 we'll be able to work using our voice to virtually communicate (as we currently
 do with emails). This is an example of the positive impact machine learning can
-have on jobs, increasing worker's productivity.
+have on jobs, increasing worker's productivity.\\
 
 Those changes lead to two major challenges for our society. One is about
 reshaping the way we work. Two is about enabling people to work.
@@ -1380,15 +1410,17 @@ classes depends on jobs.
 The thing is, if we can automate most of the work company do today (growing food,
 enabling people to move, producing energy), the time when progress was based on
 economic growth and work will come to an end, or at least the role of jobs in
-the society will change.
+the society will change.\\
+
 This will impact our daily lives, the norm won't be to work for 45 years anymore.
 This won't be possible because of the lack of jobs. In France, working 35 hours
 a week is today considered by many nations as detrimental to the country's economic
 health. But we can expect it to become the norm. \href{http://fourhourworkweek.com/}
 {Tim Ferris 4-hour man week} could become a reality.
 Then comes the question of money. If people can't find jobs for their whole life,
-how will they make money. The idea of a
-\href{http://www.globalresearch.ca/an-unconditional-citizens-income-a-basic-guaranteed-minimum-income/5423130}
+how will they make money. \\
+
+ The idea of a \href{http://www.globalresearch.ca/an-unconditional-citizens-income-a-basic-guaranteed-minimum-income/5423130}
 {minimum income} is considered a way to solve this problem. The society will be
 able to provide each citizen with enough to live, in the form of a minimum income.
 Then, the citizen will have the possibility to work to increase that income.
@@ -1403,7 +1435,8 @@ Hence, education will be more important than ever.
 Today, school is about enabling people to have common ground and to enter the
 job market once they become adults. Some students drop out of school before
 having a degree, and can find a blue-collar job. Though, what happens when those
-jobs no longer exist.
+jobs no longer exist.\\
+
 We've seen that craftsmanship will always be values. For instance, the most
 efficient way to produce watches is to build them in a factory, with machine
 assembling the different components of it. Though, people value watches that have
@@ -1413,6 +1446,7 @@ For the big part of it, jobs will require a very strong background. Hence,
 school and university will need to train students better and better with time to
 reach the always increasing barrier to entry on the labor market. Most of the
 jobs will be engineer-level jobs.
+
 Consequently, we'll need to reshape the way we teach to manage to increase the
 level of students each year, so they can find a job.
 
@@ -1449,17 +1483,20 @@ works, especially in regards to the  importance we attribute to work.\\
 Though, we're still very far from artificial general intelligence. First, the
 computing power available is not powerful enough. Second, the models we have are
 showing their limits. In spite of the enthusiasm there is around AI, we need to
-bare in mind that super-intelligence won't become a reality for years, and we
-may even never reach it. Most companies selling commercial AI products are
-applying Machine Learning models to narrow industries, hard AI, for the moment,
-is only mentioned in scientific papers and has no impact on the entrepreneurial
-ecosystem. However, AI will most likely lead to a revolution in the  way we
-live, and it's likely that it will start impacting our lives through  startups.
-We just need to bare in mind that this change will probably take dozens  of year
-to happen for real. Just like specialized machines replaced human workers in old
-industries,  new specialized, intelligent machines will replace humans for tasks
-where they outperform humans.
+bare in mind that super-intelligence or even human-like intelligence won't
+become a reality for years, and we may even never reach it. Most companies
+selling commercial AI products are applying Machine Learning models to narrow
+industries, hard AI, for the moment, is only mentioned in scientific papers and
+has no immediate impact on the entrepreneurial ecosystem.\\
 
+ However, it is slowly changing things in certain industries, creating
+ entrepreneurial opportunities. In the end AI will most likely lead to a
+ revolution in the  way we live, and it's likely that it will start impacting
+ our lives through  startups. We just need to bare in mind that this change will
+ probably take dozens  of year to happen at great scale. Just like specialized
+ machines replaced human workers in old industries,  new specialized,
+ intelligent machines will replace humans for tasks where they outperform
+ humans. It will redefine some industries as well as some categories of employement
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1472,6 +1509,8 @@ where they outperform humans.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addcontentsline{toc}{section}{Bibliography}
 
 \begin{thebibliography}{20}
 
